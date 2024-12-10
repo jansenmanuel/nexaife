@@ -1,0 +1,16 @@
+@import "../../../Constant/DesainToken.module";
+
+.modal :global(.ant-modal-content) {
+  border-radius: $radius-2xl;
+  background-color: #f1f1f1;
+  min-height: 200px;
+
+  :global(.ant-modal-body) {
+    padding: 0;
+    border-radius: inherit;
+  }
+}
+
+.modal h1 {
+  @include fontTitleMedium;
+}

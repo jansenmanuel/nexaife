@@ -1,0 +1,86 @@
+@import "../../Constant/DesainToken.module.scss";
+
+.table-container {
+
+  .ant-table {
+    background-color: transparent;
+  }
+
+  .ant-table table {
+    border: 1px #dddddd solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    @include fontBodyMedium();
+  }
+
+  .ant-table-thead > tr > th {
+    background: #f6f6f6 !important;
+    @include fontBodyMedium();
+    font-weight: 700 !important;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    border: 0px, 0px, 1px, 0px;
+    border-color: #dddddd;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 11px !important;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 11px !important;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 14px !important;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 14px !important;
+  }
+
+  .ant-table-column-sorters {
+    width: fit-content;
+  }
+
+  .ant-table-column-sorter-down.active,
+  .ant-table-column-sorter-up.active {
+    color: black;
+  }
+
+  .even-row {
+    background-color: #ffffff !important;
+  }
+
+  .odd-row {
+    background-color: #f6f6f6 !important;
+  }
+
+  td.ant-table-column-sort {
+    background: none;
+  }
+
+  .ant-select {
+    @include fontBodySmall();
+  }
+
+  .ant-pagination {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+
+    .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next {
+      min-width: 24px;
+    }
+
+    li {
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+      vertical-align: middle;
+    }
+  }
+
+}

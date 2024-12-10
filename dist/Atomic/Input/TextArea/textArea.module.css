@@ -1,0 +1,76 @@
+.customTextArea::placeholder {
+    text-align: left;
+    color: #C6C6C6;
+}
+
+.customTextArea:hover {
+    border: 1px solid #1D1D1D;
+}
+
+.customTextArea:hover[disabled] {
+    border: 1px solid #DADCDE !important;
+}
+
+.customTextArea:focus {
+    box-shadow: none;
+    border-color: #1D1D1D;
+}
+
+.customTextArea {
+    border: 1px solid #DADCDE;
+    border-radius: 6px;
+    color: #1D1D1D;
+    font-weight: 400;
+    min-width: 500px;
+    max-width: 600px !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textSm {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.textMd {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding: 10px 14px;
+}
+
+.textLg {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+.textXl {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43.58px;
+    text-align: left;
+    padding: 14px 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textXxl {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    padding: 16px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:global(.ant-input[disabled]) {
+    background-color: #f1f1f1;
+    color: #818181;
+}

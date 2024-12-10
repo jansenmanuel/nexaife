@@ -1,0 +1,151 @@
+@import '../../Constant/DesainToken.module.scss';
+
+@mixin padding ($paddingHref, $paddingVertRef) {
+  padding-left: $paddingHref;
+  padding-right: $paddingHref;
+  padding-top: $paddingVertRef;
+  padding-bottom: $paddingVertRef;
+}
+
+@mixin iconSize($iconsSize) {
+  width: $iconsSize;
+  height: $iconsSize;
+}
+
+@mixin tag($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: $gap;
+}
+
+.Tagxs :global(.ant-tag) {
+  @include padding($spacing-sm-8, $spacing-sm-4);
+  border-radius: $radius-2xs;
+  @include tag($spacing-sm-4)
+}
+
+.Tagsm :global(.ant-tag) {
+  @include padding($spacing-sm-10, $spacing-sm-4);
+  border-radius: $radius-2xs;
+  @include tag($spacing-sm-6)
+}
+
+.Tagmd :global(.ant-tag) {
+  @include padding($spacing-sm-12, $spacing-sm-4);
+  border-radius: $radius-xs;
+  @include tag($spacing-sm-8)
+}
+
+.Taglg :global(.ant-tag) {
+  @include padding($spacing-sm-14, $spacing-sm-4);
+  border-radius: $radius-xs;
+  @include tag($spacing-sm-10)
+}
+
+.Tagxl :global(.ant-tag) {
+  @include padding($spacing-md-16, $spacing-sm-8);
+  border-radius: $radius-sm;
+  @include tag($spacing-sm-12)
+}
+
+.Tagxxl :global(.ant-tag) {
+  @include padding($spacing-md-20, $spacing-sm-12);
+  border-radius: $radius-sm;
+  @include tag($spacing-sm-12)
+}
+
+@mixin label($fontSize) {
+  font-size: $fontSize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.Labelxs {
+  @include label(12px);
+}
+
+.Labelsm {
+  @include label(14px);
+}
+
+.Labelmd {
+  @include label(16px);
+}
+
+.Labellg {
+  @include label(20px);
+}
+
+.Labelxl {
+  @include label(24px);
+}
+
+.Labelxxl {
+  @include label(32px);
+}
+
+.Tagxs {
+  @include tag(4px)
+}
+
+.Tagsm {
+  @include tag(6px)
+}
+
+.Tagmd {
+  @include tag(8px)
+}
+
+.Taglg {
+  @include tag(10px)
+}
+
+.Tagxl {
+  @include tag(12px)
+}
+
+.Tagxxl {
+  @include tag(12px)
+}
+
+.Tagxs :global(svg) {
+  @include iconSize(16px);
+}
+
+.Tagsm :global(svg) {
+  @include iconSize(16px);
+}
+
+.Tagmd :global(svg) {
+  @include iconSize(18px);
+}
+
+.Taglg :global(svg) {
+  @include iconSize(20px);
+}
+
+.Tagxl :global(svg) {
+  @include iconSize(22px);
+}
+
+.Tagxxl :global(svg) {
+  @include iconSize(24px);
+}
+
+.Statedefault :global(svg) {
+  color: $color-text;
+}
+
+.Statecolored :global(svg) {
+  color: $color-text-inverse;
+}
+
+.Statedisabled :global(svg) {
+  color: $color-text-disabled;
+}
+
+.Stateoutlined :global(svg) {
+  color: $color-text;
+}

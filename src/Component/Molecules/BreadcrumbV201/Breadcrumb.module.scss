@@ -1,0 +1,32 @@
+@import "../../Constant/DesainToken.module.scss";
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $spacing-sm-8;
+  color: $color-text-link;
+  white-space: nowrap;  
+  @include fontBodyMedium();
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm-8;
+  cursor: pointer;
+}
+
+.breadcrumbIcon {
+  width: 20px;
+}
+
+.breadcrumbItemText {
+  margin-right: 8px;
+
+}
+
+.breadcrumbCurrent {
+  color: $color-text-subtlest;
+  font-weight: 500;
+}

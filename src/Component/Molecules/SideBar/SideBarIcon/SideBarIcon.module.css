@@ -1,0 +1,19 @@
+.TooltipText {
+  visibility: hidden;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin-left: 49px;
+  position: fixed;
+  z-index: 100;
+}
+.Icon {
+  display: flex;
+}
+.Icon:hover .TooltipText {
+  visibility: visible;
+}
+
+

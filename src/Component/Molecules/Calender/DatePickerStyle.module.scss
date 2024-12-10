@@ -1,0 +1,148 @@
+@import '../../Constant/DesainToken.module.scss';
+
+:root {
+  --main-color-date: pink;
+}
+
+.containerActionButtonDate {
+  display: flex !important;
+  justify-content: end !important;
+  margin-top: 1.03vh;
+  margin-bottom: 1.03vh;
+  gap: 4px;
+}
+
+.DatePicker :global(.ant-picker-suffix) {
+  margin-left: 1px;
+  margin-right: 10px;
+  // order: -1;
+}
+
+.DatePickerSm :global(.ant-picker-input > input) {
+  @include fontBodySmall()
+}
+
+.DatePickerMd :global(.ant-picker-input > input) {
+  @include fontBodyMedium()
+}
+
+.DatePickerLg :global(.ant-picker-input > input) {
+  @include fontBodyLarge()
+}
+
+.DatePickerXl :global(.ant-picker-input > input) {
+  @include fontTitleLarge();
+  font-weight: normal;
+}
+
+.DatePickerXxl :global(.ant-picker-input > input) {
+  @include fontHeading6();
+  font-weight: normal;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner
+  ) {
+  background-color: var(--main-color-date) !important;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner
+  ) {
+  background-color: var(--main-color-date) !important;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-cell-in-view.ant-picker-cell-today
+      .ant-picker-cell-inner::before
+  ) {
+  border-color: transparent !important;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+        .ant-picker-cell-range-start-single
+      )::before
+  ),
+.createDateRangePicker
+  :global(.ant-picker-cell-in-view.ant-picker-cell-in-range::before),
+.createDateRangePicker
+  :global(
+    .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+        .ant-picker-cell-range-end-single
+      )::before
+  ),
+.createDateRangePicker
+  :global(
+    .ant-picker-time-panel-column
+      > li.ant-picker-time-panel-cell-selected
+      .ant-picker-time-panel-cell-inner
+  ) {
+  background: var(--main-color-date) !important;
+  opacity: 0.2;
+}
+
+.createDateRangePicker :global(.ant-picker-cell:before) {
+  top: 2.09vh !important;
+}
+
+.createDateRangePicker:global(.ant-calendar-picker-input.ant-input:hover) {
+  border-color: var(--main-color-date) !important;
+  outline: 0 !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(49, 139, 54, 0.342) !important;
+  box-shadow: 0 0 0 2px rgba(49, 139, 54, 0.342) !important;
+}
+
+.createDateRangePicker:hover {
+  border-color: var(--main-color-date) !important;
+}
+
+.createDateRangePickerDisabled:hover {
+  border-color: #dadcde;
+}
+
+.DatePicker {
+  .createDateRangePickerDisabled{
+    background-color: #f1f1f1;
+    color: #818181;
+  }
+}
+
+.createDateRangePicker:global(.ant-picker-focused) {
+  border-color: var(--main-color-date) !important;
+  outline: 0 !important;
+  // -webkit-box-shadow: 0 0 0 2px rgba(49, 139, 54, 0.342) !important;
+  // box-shadow: 0 0 0 2px rgba(49, 139, 54, 0.342) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.createDateRangePicker :global(.ant-picker-active-bar) {
+  background-color: var(--main-color-date) !important;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-panel-container
+      .ant-picker-month-panel
+      .ant-picker-body
+      .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected
+      .ant-picker-cell-inner
+  ) {
+  background-color: var(--main-color-date) !important;
+}
+
+.createDateRangePicker
+  :global(
+    .ant-picker-panel-container
+      .ant-picker-year-panel
+      .ant-picker-body
+      .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected
+      .ant-picker-cell-inner
+  ) {
+  background-color: var(--main-color-date) !important;
+}

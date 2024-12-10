@@ -1,0 +1,112 @@
+:root {
+  --main-color: black;
+}
+
+@mixin InputButtonContainer(
+  $hg: 42px,
+  $br: 6px,
+  $bc: var(--grayscale-20, #dadcde),
+  $wd: 501.6px
+) {
+  width: $wd !important;
+  border: 1px solid $bc;
+  height: $hg !important;
+  border-radius: $br;
+  &:hover {
+    border: 1px solid var(--main-color);
+  }
+}
+
+@mixin InputButtonContainerChild($gp: 12px, $wd: 401px) {
+  display: flex;
+  align-items: center;
+  gap: $gp;
+  width: $wd;
+}
+
+.parentInputButtonSm {
+  @include InputButtonContainer();
+}
+
+.parentInputButtonSmActive {
+  @include InputButtonContainer($bc: var(--main-color));
+}
+
+.parentInputButtonMd {
+  @include InputButtonContainer(53.6px, 8px);
+}
+
+.parentInputButtonMdActive {
+  @include InputButtonContainer(53.6px, 8px, $bc: var(--main-color));
+}
+
+.parentInputButtonLg {
+  @include InputButtonContainer(62px, 10px);
+}
+.parentInputButtonXl {
+  @include InputButtonContainer(72px, 12px);
+}
+
+.parentInputButtonXxl {
+  @include InputButtonContainer(82px, 14px);
+}
+
+.childParentInputSm {
+  @include InputButtonContainerChild();
+}
+
+.childParentInputMd {
+  @include InputButtonContainerChild($gp: 14px);
+}
+
+.selectBorderNoneSm {
+  border: none !important;
+  padding: 8px 98px 8px 12px;
+}
+
+.selectBorderNoneSm {
+  height: 40.7px;
+  font-size: 16px;
+  border: none !important;
+  padding: 8px 98px 8px 12px;
+}
+
+.selectBorderNoneMd {
+  height: 52px;
+  font-size: 20px;
+  border: none !important;
+  padding: 8px 117px 8px 12px;
+}
+
+.setCenterSm {
+  min-width: 50px;
+  padding: 8px 0px;
+  align-items: center;
+  color: black;
+}
+
+.setCenterMd {
+  min-width: 60px;
+  padding: 8px 0px;
+  align-items: center;
+  color: black;
+}
+
+.setCenterLg {
+  min-width: 60px;
+  padding: 8px 0px;
+  align-items: center;
+  color: black;
+}
+.setCenterXl {
+  min-width: 60px;
+  padding: 8px 0px;
+  align-items: center;
+  color: black;
+}
+.setCenterXxl {
+  min-width: 60px;
+  padding: 8px 0px;
+  align-items: center;
+  color: black;
+}

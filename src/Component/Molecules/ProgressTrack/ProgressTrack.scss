@@ -1,0 +1,23 @@
+@import "../../Constant/DesainToken.module.scss";
+
+:root {
+    --visible-component: "flex";
+
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title:after{
+// background-color: #DADCDE;
+background: var(--Color-Border-color-border, #DADCDE);
+}
+.ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title:after{
+    background: var(--Color-Border-color-border, #DADCDE);   
+}
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title:after{
+    background: var(--Color-Border-color-border-success-strong, #57C22D);
+}
+.ant-steps-item-finish .ant-steps-item-icon>.ant-steps-icon{
+    color:var(--Color-Border-color-border-success-strong, #57C22D);
+}
+.ant-steps-item-custom.ant-steps-item-process .ant-steps-item-icon>.ant-steps-icon{
+    color:var(--Color-Border-color-border-success-strong, #57C22D);  
+}

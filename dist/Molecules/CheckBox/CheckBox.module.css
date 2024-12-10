@@ -1,0 +1,64 @@
+.CheckBox {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+}
+.Sm label {
+  font-size: 16px;
+  line-height: 19px;
+}
+.Md label {
+  font-size: 20px;
+  line-height: 23px;
+}
+.Lg label {
+  font-size: 24px;
+  line-height: 28px;
+}
+.Sm input[type="checkbox"],
+.Md input[type="checkbox"],
+.Sm input[type="checkbox"]:checked::after,
+.Md input[type="checkbox"]:checked::after {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.Lg input[type="checkbox"],
+.Lg input[type="checkbox"]:checked::after {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+}
+
+.CheckBox input[type="checkbox"] {
+  display: grid;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.CheckBox input[type="checkbox"]::before,
+.CheckBox input[type="checkbox"]::after {
+  grid-area: 1/1;
+  border-radius: 4px;
+}
+
+.CheckBox input[type="checkbox"]:not(checked)::before {
+  content: "";
+}
+.CheckBox input[type="checkbox"]:focus {
+  border: none !important;
+}
+
+.Disabled input {
+  box-sizing: border-box;
+}
+.Label {
+  margin-left: 8px;
+}
+.Boxlabel Span {
+  color: red;
+}

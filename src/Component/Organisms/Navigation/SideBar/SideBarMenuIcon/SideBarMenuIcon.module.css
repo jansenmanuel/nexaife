@@ -1,0 +1,33 @@
+/* .SideBar {
+  background: white;
+  width: 25vw;
+  max-width: 25vw;
+  height: 100vh;
+  max-height: 100vh;
+} */
+
+.SideIcon {
+  width: 60px;
+  height: 100%;
+}
+.SideIcon ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.ItemIcon {
+  padding: 10px;
+  margin: 10px;
+}
+.ItemIconActive,
+.ItemIcon:hover {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+
+
+.sideBarBox {
+  display: flex;
+  height: 100vh;
+}

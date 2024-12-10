@@ -1,0 +1,86 @@
+@import '../../Constant//DesainToken.module.scss';
+
+.seeMoreButton {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: $spacing-md-16;
+  height: fit-content;
+  color: #13A1DC;
+  display: flex;
+  justify-content: start;
+  margin-top: 16px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: start;
+}
+
+:global(.ant-btn) {
+  padding: 0px;
+}
+
+.notificationBody {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: $color-text-subtle;
+  padding-right: 52px;
+  padding-bottom: 0px;
+  // overflow: hidden;
+  // display: -webkit-box;
+  // -webkit-line-clamp: 3;
+  // -webkit-box-orient: vertical;
+}
+
+.infoCard :global(.ant-alert-message) {
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.infoCard :global(.ant-alert-with-description) {
+  padding: 16px;
+  border-radius: $radius-md;
+  // width: 700px;
+  font-weight: 400;
+  color: $color-text-subtle;
+}
+
+.infoCard :global(.ant-alert-content) {
+  margin: 0px 16px;
+}
+
+.infoCard :global(.InfoCard_notificationBody__SiOb1) {
+  padding: 0px;
+}
+
+.infoCard :global(.ant-alert-close-icon) {
+  height: 20px;
+  width: 20px;
+  font-size: 1.25rem;
+}
+
+.infoCard :global(.ant-alert-info) {
+  background-color: $color-background-info;
+  border-color: $color-border-info-weak;
+}
+
+.infoCard :global(.ant-alert-error){
+  background-color: $color-background-danger;
+  border-color: $color-border-danger-weak;
+}
+
+.infoCard :global(.ant-alert-warning) {
+  background-color: $color-background-warning;
+  border-color: $color-border-warning-weak;
+}
+
+.infoCard :global(.ant-alert-success) {
+  background-color: $color-background-success;
+  border-color: $color-border-success-weak;
+}

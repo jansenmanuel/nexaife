@@ -1,0 +1,59 @@
+/* .SideBar {
+  width: 25vw;
+  max-width: 25vw;
+  height: 100vh;
+  max-height: 100vh;
+} */
+
+.SideIcon {
+  width: 60px;
+  height: 100%;
+}
+.SideIcon ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+
+.SideIconCollapse {
+  width: 60px;
+  height: 100%;
+}
+.SideIconCollapse ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+
+.SideMenu {
+  transition: margin-right 1s;
+  width: 256px;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.SideMenuCollapse {
+  visibility: hidden;
+  transition: margin-right 1s;
+  width: 256px;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1350px) {
+  .SideIcon {
+    z-index: 2;
+  }
+  .SideIconCollapse {
+    z-index: 1;
+    display: none;
+  }
+  .SideMenu , .SideMenuCollapse{
+    background: rgb(255, 255, 255);
+    width: 256px;
+    visibility: visible;
+  }
+
+}
+.SideBarBox {
+  height: calc(100vh - 80px) ;
+}

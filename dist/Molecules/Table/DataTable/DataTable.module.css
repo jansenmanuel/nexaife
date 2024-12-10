@@ -1,0 +1,51 @@
+.Shadow {
+  padding: -20px !important;
+}
+.Container {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.FullRound {
+  border-radius: 10px 10px 10px 10px;
+}
+.HalfRound {
+  border-radius: 10px 10px 0px 0px;
+}
+.HalfRoundBottom{
+  border-radius:  0px 0px 10px 10px;
+}
+.ContainerFixXCol {
+  width: 100%;
+  border-radius: 10px 10px !important;
+}
+.Table {
+  margin: 40px 0px 0px;
+  width: 100%;
+  border-radius: 10px 10px;
+}
+.TableHeader {
+  border-bottom: 1px solid #999999;
+  white-space: nowrap;
+  height: 50px;
+  width: 100%;
+}
+.TableHeader th {
+  max-height: 50px;
+}
+
+
+.ContainerFixXCol td:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 120px;
+  left: 0;
+  z-index: 2;
+}
+
+.ContainerFixXCol th:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 120px;
+  left: 0;
+  z-index: 2;
+}

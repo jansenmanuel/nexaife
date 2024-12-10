@@ -1,0 +1,119 @@
+@import '../../Constant/DesainToken.module.scss';
+
+$button-s: (
+  width: fit-content,
+  height: 32px,
+  font-size: 16px,
+  img-width: 67px,
+  img-height: 18px,
+  padding-top: $spacing-sm-4,
+  padding-bottom: $spacing-sm-6,
+  line-height: 21.79px,
+  label-height : 22px,
+  label-width : fit-content,
+);
+
+$button-m: (
+  width: fit-content,
+  height: 42px,
+  font-size: 20px,
+  img-width: 96px,
+  img-height: 27px,
+  padding-top: $spacing-sm-8,
+  padding-bottom: $spacing-sm-8,
+  line-height: 27.24px,
+  label-height : 27px,
+  label-width : fit-content,
+);
+
+$button-l: (
+  width: fit-content,
+  height: 56px,
+  font-size: 24px,
+  img-width: 117px,
+  img-height: 33px,
+  padding-top: $spacing-sm-12,
+  padding-bottom: $spacing-sm-12,
+  line-height: 32.68px,
+  label-height : 33px,
+  label-width : fit-content,
+);
+
+$button-xl: (
+  width: fit-content,
+  height: 72px,
+  font-size: 32px,
+  img-width: 122px,
+  img-height: 32px,
+  padding-top: 14px,
+  padding-bottom: 14px,
+  line-height: 43.58px,
+  label-height : 44px,
+  label-width : fit-content,
+);
+
+@mixin buttonSize($size) {
+  width: map-get($size, width);
+  height: map-get($size, height);
+  
+  .label {
+    font-size: map-get($size, font-size);
+    line-height: map-get($size, line-height);
+    width: map-get($size , label-width);
+    height: map-get($size, label-height);
+  }
+  
+  img {
+    width: map-get($size, img-width);
+    height: map-get($size, img-height);
+  }
+  
+  align-items: center;
+  padding-top: map-get($size, padding-top);
+  padding-bottom: map-get($size, padding-bottom);
+}
+
+.label {
+  font-family: Open Sans;
+  text-align: left;
+  font-weight: 600;
+  color: $color-text ;
+}
+
+.buttonLoginGroChat {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 20px;
+  padding-left: 24px;
+  border: 1px solid $color-border;
+  background-color: $color-background;
+  
+  &:hover {
+    // border-color: #af4c4c;
+    border-color: var(--main-color);
+    background-color: #e2e2e2;
+    cursor: pointer;
+  }
+  
+  &--s {
+    @include buttonSize($button-s);
+    border-radius: $radius-xs;
+    padding-right: $spacing-md-24; 
+  }
+  
+  &--m {
+    @include buttonSize($button-m);
+    border-radius: $radius-sm;
+  }
+  
+  &--l {
+    @include buttonSize($button-l);
+    border-radius: $radius-md;
+  }
+  
+  &--xl {
+    @include buttonSize($button-xl);
+    border-radius: $radius-lg;
+  }
+}

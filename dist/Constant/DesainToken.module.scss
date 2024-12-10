@@ -1,0 +1,304 @@
+// Nexsoft Color
+$nexsoft-10: #fdece9;
+$nexsoft-20: #fbd9d3;
+$nexsoft-30: #fac6bd;
+$nexsoft-40: #f8b3a7;
+$nexsoft-50: #f7a091;
+$nexsoft-60: #f58d7b;
+$nexsoft-70: #f37a65;
+$nexsoft-80: #f2664e;
+$nexsoft-90: #f05438;
+$nexsoft-100: #ef4123;
+
+// Neutral
+$white-0: #ffffff;
+$white-1: #f9f9f9;
+$white-2: #f6f6f6;
+$white-3: #f1f1f1;
+$white-4: #dddddd;
+$placeholder-color: #c6c6c6;
+$disable-color: #acacac;
+$neutral-tertiary-color: #818181;
+$neutral-secondary-color: #424242;
+$neutral-primary-color: #1d1d1d;
+
+// Grayscale
+$greyscale-10: #ecedee;
+$greyscale-20: #dadcde;
+$greyscale-30: #c8cbce;
+$greyscale-40: #b6babd;
+$greyscale-50: #a4a9ad;
+$greyscale-60: #92989d;
+$greyscale-70: #80878c;
+$greyscale-80: #6e767c;
+$greyscale-90: #5c656c;
+$greyscale-100: #4a545c;
+
+// Green
+$green-10: #eef8ea;
+$green-20: #ddf2d5;
+$green-30: #ccecc0;
+$green-40: #bbe6ab;
+$green-50: #abe096;
+$green-60: #9ada81;
+$green-70: #89d46c;
+$green-80: #78ce56;
+$green-90: #67c842;
+$green-100: #57c22d;
+
+// Red
+$red-10: #f9e7e5;
+$red-20: #f4d0cc;
+$red-30: #efb9b2;
+$red-40: #eaa299;
+$red-50: #e58b80;
+$red-60: #df7466;
+$red-70: #da5d4d;
+$red-80: #d54633;
+$red-90: #d02f1a;
+$red-100: #cb1801;
+
+// Orange
+$orange-10: #fef6ea;
+$orange-20: #fdeed5;
+$orange-30: #fce6c0;
+$orange-40: #fcddac;
+$orange-50: #fbd597;
+$orange-60: #facd82;
+$orange-70: #fac46e;
+$orange-80: #f9bc59;
+$orange-90: #f8b444;
+$orange-100: #f8ac30;
+
+// Blue
+$blue-10: #e5eff8;
+$blue-20: #cce0f2;
+$blue-30: #b2d1eb;
+$blue-40: #99c2e5;
+$blue-50: #7fb3de;
+$blue-60: #66a4d8;
+$blue-70: #4c95d1;
+$blue-80: #3286cb;
+$blue-90: #1977c4;
+$blue-100: #0068be;
+
+// Background Color
+$color-background: $white-0;
+$color-background-neutral: $neutral-secondary-color;
+$color-background-hover: $white-1;
+$color-background-gray: $white-2;
+$color-background-disabled: $white-3;
+$color-background-danger: $red-10;
+$color-background-danger-strong: $red-100;
+$color-background-success: $green-10;
+$color-background-success-strong: $green-100;
+$color-background-warning: $orange-10;
+$color-background-warning-strong: $orange-100;
+$color-background-info: $blue-10;
+$color-background-info-strong: $blue-100;
+$color-background-notification: $red-90;
+$color-background-rating: $orange-80;
+
+// Text Color
+$color-text: $neutral-primary-color;
+$color-text-subtle: $neutral-secondary-color;
+$color-text-subtlest: $neutral-tertiary-color;
+$color-text-disabled: $disable-color;
+$color-text-danger: $red-100;
+$color-text-success: $green-100;
+$color-text-warning: $orange-100;
+$color-text-info: $blue-100;
+$color-text-inverse: $white-0;
+$color-text-placeholder: $placeholder-color;
+$color-text-placeholder-disabled: $neutral-tertiary-color;
+$color-text-link: $blue-100;
+$color-text-link-hover: $blue-80;
+
+// Icon Color
+$color-icon: $neutral-secondary-color;
+$color-icon-disabled: $disable-color;
+$color-icon-inverse: $white-0;
+$color-icon-danger: $red-100;
+$color-icon-success: $green-100;
+$color-icon-warning: $orange-100;
+$color-icon-info: $blue-100;
+$color-icon-link: $blue-100;
+$color-icon-link-hover: $blue-80;
+
+// Border Color
+$color-border: $greyscale-20;
+$color-border-inverse: $white-0;
+$color-border-selected: $neutral-primary-color;
+$color-border-disabled: $greyscale-20;
+$color-border-danger-strong: $red-100;
+$color-border-danger-medium: $red-70;
+$color-border-danger-weak: $red-40;
+$color-border-success-strong: $green-100;
+$color-border-success-medium: $green-70;
+$color-border-success-weak: $green-40;
+$color-border-warning-strong: $orange-100;
+$color-border-warning-medium: $orange-70;
+$color-border-warning-weak: $orange-40;
+$color-border-info-strong: $blue-100;
+$color-border-info-medium: $blue-70;
+$color-border-info-weak: $blue-40;
+
+// Chart Color
+$color-chart-1: $green-70;
+$color-chart-1-hover: $green-80;
+$color-chart-2: $red-70;
+$color-chart-2-hover: $red-80;
+$color-chart-3: $orange-70;
+$color-chart-3-hover: $orange-80;
+$color-chart-4: $blue-70;
+$color-chart-4-hover: $blue-80;
+$color-chart-5: $greyscale-70;
+$color-chart-5-hover: $greyscale-80;
+
+//
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+@mixin fontPropertiesToken($ff, $fw, $fz, $lh, $space) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $space;
+}
+
+@mixin fontHeading1() {
+  @include fontPropertiesToken("Open Sans", 300, 5rem, 5.75rem, -0.15625rem); // 80px -> 5rem, 92px -> 5.75rem, -2.5px -> -0.15625rem
+}
+
+@mixin fontHeading2() {
+  @include fontPropertiesToken("Open Sans", 400, 4.5rem, 5.25rem, -0.125rem); // 72px -> 4.5rem, 84px -> 5.25rem, -2px -> -0.125rem
+}
+
+@mixin fontHeading3() {
+  @include fontPropertiesToken("Open Sans", 400, 4rem, 4.75rem, -0.09375rem); // 64px -> 4rem, 76px -> 4.75rem, -1.5px -> -0.09375rem
+}
+
+@mixin fontHeading4() {
+  @include fontPropertiesToken("Open Sans", 400, 3.5rem, 4.25rem, -0.0625rem); // 56px -> 3.5rem, 68px -> 4.25rem, -1px -> -0.0625rem
+}
+
+@mixin fontHeading5() {
+  @include fontPropertiesToken("Open Sans", 600, 3rem, 3.75rem, -0.03125rem); // 48px -> 3rem, 60px -> 3.75rem, -0.5px -> -0.03125rem
+}
+
+@mixin fontHeading6() {
+  @include fontPropertiesToken("Open Sans", 700, 2.5rem, 3rem, -0.015625rem); // 40px -> 2.5rem, 48px -> 3rem, -0.25px -> -0.015625rem
+}
+
+@mixin fontTitleLarge() {
+  @include fontPropertiesToken("Open Sans", 700, 2rem, auto, 0px); // 32px -> 2rem
+}
+
+@mixin fontTitleMedium() {
+  @include fontPropertiesToken("Open Sans", 700, 1.5rem, auto, 0px); // 24px -> 1.5rem
+}
+
+@mixin fontTitleSmall() {
+  @include fontPropertiesToken("Open Sans", 700, 1rem, auto, 0px); // 16px -> 1rem
+}
+
+@mixin fontSubTitleLarge() {
+  @include fontPropertiesToken("Open Sans", 600, 1.125rem, auto, 0px); // 18px -> 1.125rem
+}
+
+@mixin fontSubTitleMedium() {
+  @include fontPropertiesToken("Open Sans", 600, 1rem, auto, 0px); // 16px -> 1rem
+}
+
+@mixin fontSubTitleSmall() {
+  @include fontPropertiesToken("Open Sans", 600, 0.875rem, auto, 0px); // 14px -> 0.875rem
+}
+
+@mixin fontBodyLarge() {
+  @include fontPropertiesToken("Roboto", 400, 1.5rem, 2.25rem, -0.015625rem); // 24px -> 1.5rem, 36px -> 2.25rem, -0.25px -> -0.015625rem
+}
+
+@mixin fontBodyMedium() {
+  @include fontPropertiesToken("Roboto", 400, 1.25rem, 1.875rem, 0px); // 20px -> 1.25rem, 30px -> 1.875rem
+}
+
+@mixin fontBodySmall() {
+  @include fontPropertiesToken("Roboto", 400, 1rem, 1.5rem, 0.015625rem); // 16px -> 1rem, 24px -> 1.5rem, 0.25px -> 0.015625rem
+}
+
+@mixin fontCaptionLarge() {
+  @include fontPropertiesToken("Roboto", 400, 0.875rem, 1.25rem, 0px); // 14px -> 0.875rem, 20px -> 1.25rem
+}
+
+@mixin fontCaptionMedium() {
+  @include fontPropertiesToken("Roboto", 400, 0.75rem, 1rem, 0px); // 12px -> 0.75rem, 16px -> 1rem
+}
+
+@mixin fontCaptionSmall() {
+  @include fontPropertiesToken("Roboto", 400, 0.6875rem, 1rem, 0px); // 11px -> 0.6875rem, 16px -> 1rem
+}
+
+// Spacing Small
+
+$spacing-none: 0rem;
+$spacing-sm-2: 0.125rem; // 2px -> 0.125rem
+$spacing-sm-4: 0.25rem; // 4px -> 0.25rem
+$spacing-sm-6: 0.375rem; // 6px -> 0.375rem
+$spacing-sm-8: 0.5rem; // 8px -> 0.5rem
+$spacing-sm-10: 0.625rem; // 10px -> 0.625rem
+$spacing-sm-12: 0.75rem; // 12px -> 0.75rem
+$spacing-sm-14: 0.875rem; // 14px -> 0.875rem
+
+$spacing-md-16: 1rem; // 16px -> 1rem
+$spacing-md-18: 1.125rem; // 18px -> 1.125rem
+$spacing-md-20: 1.25rem; // 20px -> 1.25rem
+$spacing-md-22: 1.375rem; // 22px -> 1.375rem
+$spacing-md-24: 1.5rem; // 24px -> 1.5rem
+$spacing-md-26: 1.625rem; // 26px -> 1.625rem
+$spacing-md-28: 1.75rem; // 28px -> 1.75rem
+
+$spacing-lg-32: 2rem; // 32px -> 2rem
+$spacing-lg-36: 2.25rem; // 36px -> 2.25rem
+$spacing-lg-40: 2.5rem; // 40px -> 2.5rem
+$spacing-lg-44: 2.75rem; // 44px -> 2.75rem
+$spacing-lg-48: 3rem; // 48px -> 3rem
+
+$spacing-xl-56: 3.5rem; // 56px -> 3.5rem
+$spacing-xl-64: 4rem; // 64px -> 4rem
+$spacing-xl-72: 4.5rem; // 72px -> 4.5rem
+$spacing-xl-80: 5rem; // 80px -> 5rem
+
+// Radius
+$radius-3xs: 0.125rem; // 2px -> 0.125rem
+$radius-2xs: 0.25rem; // 4px -> 0.25rem
+$radius-xs: 0.375rem; // 6px -> 0.375rem
+$radius-sm: 0.5rem; // 8px -> 0.5rem
+$radius-md: 0.625rem; // 10px -> 0.625rem
+$radius-lg: 0.75rem; // 12px -> 0.75rem
+$radius-xl: 0.875rem; // 14px -> 0.875rem
+$radius-2xl: 1rem; // 16px -> 1rem
+$radius-3xl: 1.125rem; // 18px -> 1.125rem
+$radius-4xl: 1.25rem; // 20px -> 1.25rem
+$radius-5xl: 1.375rem; // 22px -> 1.375rem
+$radius-6xl: 1.5rem; // 24px -> 1.5rem
+$radius-phill: 62.5rem; // 9999px -> 62.5rem
+
+// Shadow
+@mixin shadow-100 {
+  box-shadow: 0rem 0.125rem 0.375rem; // 2px -> 0.125rem, 6px -> 0.375rem
+}
+
+@mixin shadow-200 {
+  box-shadow: 0rem 0.25rem 0.5rem; // 4px -> 0.25rem, 8px -> 0.5rem
+}
+
+@mixin shadow-300 {
+  box-shadow: 0rem 0.375rem 0.75rem; // 6px -> 0.375rem, 12px -> 0.75rem
+}
+
+@mixin shadow-400 {
+  box-shadow: 0rem 0.5rem 1.125rem; // 8px -> 0.5rem, 18px -> 1.125rem
+}

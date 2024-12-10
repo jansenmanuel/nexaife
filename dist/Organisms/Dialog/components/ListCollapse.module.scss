@@ -1,0 +1,14 @@
+@import "../../../Constant/DesainToken.module";
+
+.collapseCustom :global(.ant-collapse-extra) {
+  order: -1;
+  margin-right: 8px
+}
+
+.collapseCustom :global(.ant-collapse-item) :global(.ant-collapse-header) {
+  padding: 6px 0;
+}
+
+.collapseCustom :global(.ant-collapse-item) :global(.ant-collapse-content) :global(.ant-collapse-content-box) {
+  padding: 0 0 0 24px;
+}

@@ -1,0 +1,189 @@
+@import "../../Constant/DesainToken.module.scss";
+
+@mixin fontPropertiesToken($ff, $fw, $fz) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fz;
+  }
+
+.container :global(.ant-avatar) {
+    background-color: transparent;
+    border: 1px solid $color-background;
+}
+
+.containerSquareSm :global(.ant-avatar-square) {
+    border-radius: $radius-2xs;
+}
+
+.containerSquareMd :global(.ant-avatar-square) {
+    border-radius: $radius-xs;
+}
+
+.containerSquareLg :global(.ant-avatar-square) {
+    border-radius: $radius-sm;
+}
+
+.containerSquareXl :global(.ant-avatar-square) {
+    border-radius: $radius-md;
+}
+
+.containerSquareXxl :global(.ant-avatar-square) {
+    border-radius: $radius-lg;
+}
+
+
+.container :global(.ant-badge-count) {
+    background-color: $color-background-notification !important ;
+    padding: 0px;
+    border-radius: $radius-phill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-text-inverse;
+    
+}
+
+.container :global(.ant-badge-dot) {
+    background-color: $color-background-notification !important;
+    padding: 0px;
+    border-radius: $radius-phill;
+}
+
+.avatarStyleSm :global(.ant-avatar) {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.avatarStyleMd :global(.ant-avatar) {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.avatarStyleLg :global(.ant-avatar) {
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.avatarStyleXl :global(.ant-avatar) {
+    width: 72px !important;
+    height: 72px !important;
+}
+
+.avatarStyleXxl :global(.ant-avatar) {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.badgeBadgeStyleSm :global(.ant-badge-dot) {
+    width: 12px !important;
+    height: 12px !important;
+    border: 1px solid $color-border-inverse;
+}
+
+.badgeBadgeStyleMd :global(.ant-badge-dot) {
+    width: 16px !important;
+    height: 16px !important;
+    border: 1.5px solid $color-border-inverse;
+}
+
+.badgeBadgeStyleLg :global(.ant-badge-dot) {
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid $color-border-inverse;
+}
+
+.badgeBadgeStyleXl :global(.ant-badge-dot) {
+    width: 24px !important;
+    height: 24px !important;
+    border: 2.5px solid $color-border-inverse;
+}
+
+.badgeBadgeStyleXxl :global(.ant-badge-dot) {
+    width: 28px !important;
+    height: 28px !important;
+    border: 3px solid $color-border-inverse;
+}
+
+.badgeNotificationStyleSm :global(.ant-badge-count) {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-border-inverse;
+    text-align: center;
+    @include fontPropertiesToken("Roboto", 500, 10px);
+}
+
+.badgeNotificationStyleMd :global(.ant-badge-count) {
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid $color-border-inverse;
+    @include fontPropertiesToken("Roboto", 500, 14px);
+}
+
+.badgeNotificationStyleLg :global(.ant-badge-count) {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $color-border-inverse;
+    @include fontPropertiesToken("Roboto", 500, 16px);
+}
+
+.badgeNotificationStyleXl :global(.ant-badge-count) {
+    width: 44px;
+    height: 44px;
+    border: 2.5px solid $color-border-inverse;
+    @include fontPropertiesToken("Open Sans", 600, 20px);
+}
+
+.badgeNotificationStyleXxl :global(.ant-badge-count) {
+    width: 52px;
+    height: 52px;
+    border: 3px solid $color-border-inverse;
+    @include fontPropertiesToken("Open Sans", 600, 24px);
+}
+
+.badge-2xl {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
+.content-initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: $color-background-neutral;
+    p {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .text-sm{
+        @include fontPropertiesToken("Roboto", 500, 12px);
+    }
+
+    .text-md{
+        @include fontPropertiesToken("Roboto", 500 ,16px);
+        letter-spacing: 0.25px;
+        line-height: 24px;
+    }
+
+    .text-lg{
+        @include fontPropertiesToken("Roboto", 500, 20px);
+        line-height: 30px;
+    }
+
+    .text-xl{
+        @include fontPropertiesToken("Open Sans", 600, 32px);
+        line-height: 43.58px;
+    }
+
+    .text-2xl{
+        @include fontPropertiesToken("Open Sans", 600, 40px);
+        line-height: 48px;
+        letter-spacing: -0.25px;
+    }
+
+}

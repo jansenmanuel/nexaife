@@ -1,0 +1,13 @@
+.Label {
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  transform: translate(0, -2.5rem);
+}
+input:placeholder-shown + .Label {
+ z-index: -1;
+} 
+
+input:not(:placeholder-shown) + .Label {
+  color: rgb(0, 0, 0);
+}

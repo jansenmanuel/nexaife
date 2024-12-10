@@ -1,0 +1,183 @@
+@import '../../../Constant/DesainToken.module.scss';
+
+:root {
+    --custom-size-fixed-value: 40px;
+    --border-input-radius-left: 0px;
+    --border-input-radius-right: 0px;
+    --border-color-condition: "#DADCDE";
+    --border-color-left-condition: "#DADCDE";
+    --border-color-right-condition: "#DADCDE";
+}
+
+.ant-input-group-addon {
+    border-radius: 10px;
+    border-color: var(--border-color-condition);
+    
+}
+
+.ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+}
+
+.ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+}
+
+.custom-field-input .ant-input {
+    border-top-color: var(--border-color-condition);
+    border-bottom-color: var(--border-color-condition);
+    border-left-color: var(--border-color-left-condition);
+    border-right-color: var(--border-color-right-condition);
+    border-top-left-radius: var(--border-input-radius-left);
+    border-bottom-left-radius: var(--border-input-radius-left);
+    border-top-right-radius: var(--border-input-radius-right);
+    border-bottom-right-radius: var(--border-input-radius-right);
+
+}
+
+.custom-field-input .ant-input:focus {
+    border-color: black;
+    box-shadow: none;
+}
+
+.custom-field-input .ant-input:hover {
+    border-color: black !important;
+    box-shadow: none !important;
+}
+
+.custom-field-input .ant-input-disabled:focus {
+    border-color: #d9d9d9 !important;
+    box-shadow: none;
+}
+
+.custom-field-input .ant-input-disabled:hover {
+    border-color: #d9d9d9 !important;
+    box-shadow: none !important;
+}
+
+// .custom-size-fixed-value .ant-input{
+//  width: var(--custom-size-fixed-value);
+// }
+
+.custom-size-sm .ant-input {
+    height: 40px;
+    font-size: 16px;
+    width: var(--custom-size-fixed-value);
+    min-width: 100px;
+}
+
+.custom-size-md .ant-input {
+    height: 50px;
+    font-size: 20px;
+    width: var(--custom-size-fixed-value);
+    min-width: 100px;
+}
+
+.custom-size-lg .ant-input {
+    height: 60px;
+    font-size: 24px;
+    width: var(--custom-size-fixed-value);
+    min-width: 200px;
+}
+
+.custom-size-xl .ant-input {
+    height: 72px;
+    font-size: 32px;
+    width: var(--custom-size-fixed-value);
+    min-width: 200px;
+}
+
+.custom-size-xxl .ant-input {
+    height: 80px;
+    font-size: 40px;
+    width: var(--custom-size-fixed-value);
+    min-width: 200px;
+}
+
+.ant-input-group {
+    width: var(--custom-size-fixed-value);
+    min-width: 200px;
+}
+
+.custom-size-xxl .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 40px;
+}
+
+.custom-size-xxl .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 40px;
+}
+
+.custom-size-xl .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 32px;
+}
+
+.custom-size-xl .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 32px;
+}
+
+.custom-size-lg .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 24px;
+}
+
+.custom-size-lg .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 24px;
+}
+
+.custom-size-md .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 20px;
+}
+
+.custom-size-md .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 20px;
+}
+
+.optionalText {
+    color: $color-text-disabled;
+}
+
+@mixin labelProps($fz: 14px, $lh: 16.41px, $fw: 500, $pd: 6px) {
+    text-align: left;
+    font-size: $fz;
+    line-height: $lh;
+    font-family: "Roboto";
+    font-weight: $fw;
+    padding-bottom: $pd;
+}
+
+.LabelTextSm {
+    @include labelProps()
+}
+
+.LabelTextMd {
+    @include labelProps(16px, 24px, $pd: 8px)
+}
+
+.LabelTextLg {
+    @include labelProps(20px, 30px, $pd: 10px)
+}
+
+.LabelTextXl {
+    @include labelProps(24px, 36px, $pd: 12px)
+}
+
+.LabelTextXxl {
+    @include labelProps(32px, 43.58px, 600, 14px)
+}

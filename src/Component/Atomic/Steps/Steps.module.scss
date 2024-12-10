@@ -1,0 +1,90 @@
+@import '../../Constant/DesainToken.module.scss';
+
+.container :global(.ant-steps-item-finish .ant-steps-item-icon) {
+    background-color: $color-background-success-strong;
+}
+
+.container :global(.anticon svg) {
+    color: white;
+}
+
+.container :global(.ant-steps-item-icon){
+    height: 36px;
+    width: 36px;
+    margin: 0 12px 0 0;
+    border: 2px solid $color-border-inverse;
+}
+
+.container :global(.ant-steps-icon){
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+} 
+
+.container :global(.ant-steps-item-process .ant-steps-item-icon) {
+    // background-color: $color-background-info;
+    background-color: var(--main-color);
+}
+
+.container :global(.ant-steps-item>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title:after) {
+    background-color: $color-border;
+}
+
+.container :global(.ant-steps-item-wait .ant-steps-item-icon){
+    background-color: $color-background-neutral;
+}
+
+.container :global(.ant-steps-item-wait .ant-steps-item-icon>.ant-steps-icon){
+    color: white;
+}
+
+.container :global(.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title){
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text-subtle;
+}
+
+.container :global(.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title){
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text;
+}
+
+.container :global(.ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title){
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text-subtlest;
+}
+
+// .container :global(.ant-steps-item-container){
+//     max-width: 100px;
+// }
+
+.container :global(.ant-steps-item-title::after) {
+    display: inline-block;
+    // max-width: 100%;   
+}
+
+.container :global(.ant-steps-item) {
+    width: auto;
+    max-width: 250px;
+}
+
+
+.container :global(.ant-steps.ant-steps-horizontal.ant-steps-label-horizontal) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    // width: 1556px;
+    background-color: $color-background-gray;
+    border-radius: 15px 15px 0px 0px;
+    padding: $spacing-md-24;
+    border: 1px solid $color-border;
+}

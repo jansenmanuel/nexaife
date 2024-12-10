@@ -1,0 +1,90 @@
+.containerButton {
+  display: flex;
+}
+
+.containerButtonVertical {
+  display: inline-grid;
+}
+
+.buttonGroupXs {
+  width: max-content;
+  gap: 8px;
+}
+.buttonGroupSm {
+  width: max-content;
+  gap: 12px;
+}
+.buttonGroupMd {
+  width: max-content;
+  gap: 16px;
+}
+.buttonGroupLg {
+  width: max-content;
+  gap: 20px;
+}
+.buttonGroupXl {
+  width: max-content;
+  gap: 24px;
+}
+.buttonGroupXxl {
+  gap: 32px;
+  width: max-content;
+}
+
+.buttonXs {
+  min-width: 64px;
+  min-height: 26px;
+  padding: 4px 12px 6px 12px;
+}
+.buttonSm {
+  min-width: 86px;
+  min-height: 32px;
+  padding: 4px 16px 6px 16px;
+}
+.buttonMd {
+  min-width: 107px;
+  min-height: 42px;
+  padding: 7px 20px 8px 20px;
+  
+}
+.buttonLg {
+  min-width: 128px;
+  min-height: 56px;
+  padding: 11px 24px 12px 24px;
+}
+.buttonXl {
+  min-width: 171px;
+  min-height: 72px;
+  padding: 14px 32px;
+}
+.buttonXxl {
+  min-width: 213px;
+  min-height: 90px;
+  padding: 20px 40px 22px 40px;
+}
+
+.buttonVerticalXs {
+  min-width:250px;
+  min-height:26px;
+}
+.buttonVerticalSm {
+  min-width:300px;
+  min-height:32px;
+}
+.buttonVerticalMd {
+  min-width:350px;
+  min-height:42px;
+}
+.buttonVerticalLg {
+  min-width:400px;
+  min-height:56px;
+}
+.buttonVerticalXl {
+  min-width:450px;
+  min-height:72px;
+}
+.buttonVerticalXxl {
+  min-width:500px;
+  // min-width:26.04vw;
+  min-height:90px;
+}

@@ -1,0 +1,128 @@
+:root {
+  --width-input-phone: 500px;
+  --main-color: black;
+}
+
+@mixin containerInputPhoneNumber($border:1px solid #eeeeee) {
+  width: var(--width-input-phone);
+  display: flex;
+  align-items: center;
+  border: $border;
+}
+
+@mixin propertiesInputPhoneNumber($fz:16px,$hg:40px,$pd:8px 12px,) {
+  font-size: $fz !important;
+  height: $hg !important;
+  padding: $pd !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
+  white-space: nowrap !important
+}
+
+.containerInputPhoneNumber {
+  @include containerInputPhoneNumber();
+
+  &:hover {
+    border: 1px solid var(--main-color);
+  }
+}
+
+.containerInputPhoneNumberClick {
+  @include containerInputPhoneNumber(1px solid var(--main-color));
+
+  &:hover {
+    border: 1px solid var(--main-color);
+  }
+}
+
+.containerInputPhoneNumber select {
+  position: absolute;
+  border-radius: 5px;
+}
+
+.containerInputPhoneNumberDisable {
+  background-color: #F1F1F1;
+  cursor: not-allowed;
+
+  &:hover {
+    border: 1px solid #eeeeee;
+  }
+
+  ::placeholder {
+    color: #818181
+  }
+
+}
+
+.containerInputPhoneNumberError {
+  @include containerInputPhoneNumber($border: 1px solid #FF0000);
+}
+
+.InputPhoneNumberSizeSm :global(.ant-select-selector) {
+  @include propertiesInputPhoneNumber();
+}
+
+.InputPhoneNumberSizeMd :global(.ant-select-selector) {
+  @include propertiesInputPhoneNumber(20px, 50px, 10px 14px);
+}
+
+.InputPhoneNumberSizeLg :global(.ant-select-selector) {
+  @include propertiesInputPhoneNumber(24px, 60px, 12px 16px);
+}
+
+.InputPhoneNumberSizeXl :global(.ant-select-selector) {
+  @include propertiesInputPhoneNumber(32px, 72px, 14px 18px);
+}
+
+.InputPhoneNumberSizeXxl :global(.ant-select-selector) {
+  @include propertiesInputPhoneNumber(40px, 80px, 16px 20px);
+}
+
+.InputPhoneNumberSizeXxl :global(.ant-select-selection-item) {
+  overflow: visible;
+}
+
+
+.inputBorderNone {
+  border: none !important;
+  width: 100% !important;
+  padding-left: 10px;
+  // border-radius: 5px;
+}
+
+.selectBorderNoneSm {
+  border: none !important;
+  border-radius: 5px;
+  width: 74px !important;
+  margin-right: 8px;
+}
+
+.selectBorderNoneMd {
+  border: none !important;
+  border-radius: 5px;
+  width: 84px !important;
+}
+
+.selectBorderNoneLg {
+  border: none !important;
+  // border-radius: 20px;
+  width: 100px !important;
+}
+
+.selectBorderNoneXl {
+  border: none !important;
+  // border-radius: 20px;
+  width: 118px !important;
+}
+
+.selectBorderNoneXxl {
+  border: none !important;
+  // border-radius: 20px;
+  width: 135px !important;
+}
+
+.containerInputPhoneNumberDisable :global(.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector) {
+  color: #ACACAC;
+}

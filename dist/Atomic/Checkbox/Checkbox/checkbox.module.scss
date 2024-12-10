@@ -1,0 +1,65 @@
+$checkedBackgroundColor: #FFFFFF;
+$defaultBorderStyle: solid #FFFFFF;
+$disabledBackgroundColor: #ACACAC !important; // Warna latar belakang ketika checkbox dinonaktifkan
+$defaultBackgroundColor: #FFFFFF; // Warna latar belakang default ketika belum dicentang
+
+@mixin container(
+    $width : 20px,
+    $height  : 20px,
+    $margin : '8px,8px,8px,8px',
+    $borderRadius : 7px,
+    $padding : 4px,
+    $marginRight:6px
+){
+    border : 1px solid #ccc;
+    justify-content: center;// Mengatur ikon ke tengah horizontal
+    overflow: hidden;// Hindari ikon yang terlalu besar,
+    width: $width;
+    height: $height;
+    // margin: $margin;
+    margin-right: $marginRight;
+    // margin-left: $marginLeft;
+    border-radius: $borderRadius ;
+    padding: $padding;
+}
+
+.Containersm{
+    @include container(16px,16px ,12px 12px 12px 12px,4px,0px)
+}
+.Containermd{
+    @include container(18px,18px ,14px 14px 14px 14px,5px,2px,8px)
+}
+.Containerlg{
+    @include container(24px,24px ,16px 16px 16px 16px,6px,3px,10px)
+}
+.Containerxl{
+    @include container(28px,28px ,18px 18px 18px 18px,7px,4px,12px)
+}
+.Containerxxl{
+    @include container(32px,32px ,20px 20px 20px 20px,8px,5px,14px)
+}
+
+@mixin label(
+    $fontSize : 16px,
+    $fontFamily : 'Roboto'
+){
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: 400;
+}
+
+.Labelsm{
+    @include label(16px,'Roboto')
+}
+.Labelmd{
+    @include label(20px,'Roboto')
+}
+.Labellg{
+    @include label(24px,'Roboto')
+}
+.Labelxl{
+    @include label(32px ,'Open Sans')
+}
+.Labelxxl{
+    @include label(40px , 'Open Sans')
+}

@@ -1,0 +1,104 @@
+.ant-input-group-addon {
+    border-radius: 10px
+}
+
+.ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+}
+
+.ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+}
+
+.custom-field-input .ant-input:focus {
+    border-color: black;
+    box-shadow: none;
+}
+
+.custom-field-input .ant-input:hover {
+    border-color: black !important;
+    box-shadow: none !important;
+}
+
+.custom-field-input .ant-input-disabled:focus {
+    border-color: #d9d9d9 !important;
+    box-shadow: none;
+}
+
+.custom-field-input .ant-input-disabled:hover {
+    border-color: #d9d9d9 !important;
+    box-shadow: none !important;
+}
+
+.custom-size-sm .ant-input {
+    height: 40px;
+    font-size: 16px;
+}
+
+.custom-size-md .ant-input {
+    height: 50px;
+    font-size: 20px;
+}
+.custom-size-lg .ant-input {
+    height: 60px;
+    font-size: 24px;
+}
+.custom-size-xl .ant-input {
+    height: 72px;
+    font-size: 32px;
+}
+
+.custom-size-xxl .ant-input {
+    height: 80px;
+    font-size: 40px;
+}
+
+.custom-size-xxl .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 40px;
+}
+
+.custom-size-xxl .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 40px;
+}
+
+.custom-size-xl .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 32px;
+}
+
+.custom-size-xl .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 32px;
+}
+
+.custom-size-lg .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 24px;
+}
+
+.custom-size-lg .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 24px;
+}
+
+.custom-size-md .ant-input-group-addon:last-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 20px;
+}
+
+.custom-size-md .ant-input-group-addon:first-child {
+    color: #ACACAC;
+    background-color: #F6F6F6;
+    font-size: 20px;
+}

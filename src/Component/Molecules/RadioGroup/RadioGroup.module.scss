@@ -1,0 +1,29 @@
+
+@mixin titleText(
+    $fontSize : 16px,
+    $fontFamily : 'Roboto',
+    $fontWeight : 500
+){
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.RadioTitlesm{
+    @include titleText(14px,'Roboto',500)
+}
+.RadioTitlemd{
+    @include titleText(18px,'Roboto',500)
+}
+.RadioTitlelg{
+    @include titleText(20px,'Roboto',500)
+}
+.RadioTitlexl{
+    @include titleText(24px,'Roboto',500)
+}
+.RadioTitlexxl{
+    @include titleText(32px,'Open Sans',600)
+}

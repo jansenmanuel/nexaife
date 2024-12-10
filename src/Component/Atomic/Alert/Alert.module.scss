@@ -1,0 +1,121 @@
+@import '../../Constant/DesainToken.module.scss';
+
+:global {
+     .ant-notification-notice {
+         border-width: 0px 0px 0px 4px;
+         border-style: solid;
+         display: flex;
+         justify-items: center;
+         border-color: #0068BE;
+         background-color: #E5EFF8;
+         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+         border-radius: $radius-md;
+         padding: $spacing-sm-12 $spacing-md-20;
+         gap: 1px;
+         margin-bottom: $spacing-md-20;
+         box-sizing: border-box;
+         width: 700px;
+         font-family: "Roboto";
+     }
+
+
+     .ant-notification-notice .ant-notification-close-icon {
+        border-style: solid;
+     }
+     
+     .ant-notification-notice .ant-notification-notice-message {
+         font-weight: 500;
+         color: $color-text; 
+         font-size: 20px;
+         line-height: 30px;
+         margin-left: 40px;
+         font-family: "Roboto";
+         margin-top: 2px;
+     }
+
+     .ant-notification-notice .ant-notification-notice-description {
+         font-weight: 400;
+         color: $color-text-subtle;
+         font-size: 14px;
+         line-height: 16.41px;
+         margin-left: 40px;
+         margin-bottom: 5px;
+         font-family: "Roboto";
+        //  width: 592px;
+         
+     }
+
+     .ant-notification-notice-success {
+         border-color: $color-background-success-strong !important;
+         background-color: $color-background-success !important;
+     }
+
+     .ant-notification-notice-info {
+         border-color: $color-background-info-strong !important;
+         background-color: $color-background-info !important;
+     }
+
+     .ant-notification-notice-warning {
+         border-color: $color-background-warning-strong !important;
+         background-color: $color-background-warning !important;
+     }
+
+     .ant-notification-notice-error {
+         border-color: $color-background-danger-strong !important;
+         background-color: $color-background-danger !important;
+     }
+
+     @media (max-width: 1024px) {
+         .ant-notification-notice {
+             width: 700px;
+         }
+     }
+
+
+     @media (max-width: 768px) {
+         .ant-notification-notice {
+             width: 300px;
+             right: 0.1px;
+
+             .ant-notification-notice-message {
+                font-weight: 500;
+                color: $color-text;
+                font-size: 18px;
+                line-height: 30px;
+             }
+
+             .ant-notification-notice-description {
+                 font-weight: 400;
+                 color: $color-text-subtle;
+                 font-size: 14px;
+                 line-height: 16.41px;
+             }
+         }
+     }
+
+
+     @media (max-width: 480px) {
+         .ant-notification-notice {
+             width: 300px;
+             padding: 8px 10px;
+             right: 10px;
+             height: 70px;
+
+            //  .ant-notification-notice-message {
+            //     font-weight: 500;
+            //     color: #424242;
+            //     font-size: 15px;
+            //     line-height: 30px;
+            //  }
+
+            //  .ant-notification-notice-description {
+            //      font-weight: 400;
+            //      color: #424242;
+            //      font-size: 12px;
+            //      line-height: 16.41px;
+            //  }
+
+         }
+     }
+
+ }

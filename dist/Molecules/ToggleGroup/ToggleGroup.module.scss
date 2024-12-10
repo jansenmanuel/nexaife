@@ -1,0 +1,61 @@
+.toggleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+@mixin label($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin infoText($fontSize){
+  font-size: $fontSize;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.Labelsm {
+  @include label(14px, 500); 
+  font-family: 'Roboto';
+}
+
+.Labelmd {
+  @include label(16px, 500);
+  font-family: 'Roboto';
+}
+
+.Labellg {
+  @include label(20px, 500);
+  font-family: 'Roboto';
+}
+
+.Labelxl {
+  @include label(24px, 500);
+  font-family: 'Roboto';
+}
+
+.Labelxxl {
+  @include label(32px, 600);
+  font-family: 'Open Sans';
+}
+
+.InfoTextsm{
+  @include infoText(10px);
+}
+
+.InfoTextmd{
+  @include infoText(12px)
+}
+
+.InfoTextlg{
+  @include infoText(14px)
+}
+
+.InfoTextxl{
+  @include infoText(16px)
+}
+
+.InfoTextxxl{
+  @include infoText(20px)
+}

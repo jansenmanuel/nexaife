@@ -1,0 +1,32 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .sectionButton {
+        width: 25%;
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+pre code {
+    color: #d63384;
+}

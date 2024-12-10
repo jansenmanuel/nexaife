@@ -1,0 +1,123 @@
+:root {
+    --main-color: black
+}
+
+@mixin PinProperties($size:32px, $br:6px, $pd:8px 12px, $fz:14px) {
+    width: $size !important;
+    height: $size !important;
+    border-radius: $br !important;
+    border-color: #DADCDE;
+    padding: $pd;
+    font-size: $fz;
+    font-weight: 700;
+    &:hover{
+        border-color: var(--main-color) !important;
+    }
+    &:focus {
+        border-color: var(--main-color) !important;
+        border-width: 2px !important;
+    }
+}
+
+@mixin PinPropertiesDisabled($size:32px, $br:6px, $pd:8px 12px, $fz:14px) {
+    width: $size !important;
+    height: $size !important;
+    border-radius: $br !important;
+    border-color: #DADCDE !important;
+    padding: $pd;
+    font-size: $fz;
+    font-weight: 700;
+    color: #818181 !important;
+    background: var(--neutral-white-3, #F1F1F1) !important;
+    &:hover{
+        cursor: not-allowed !important;
+        // border-color: var(--main-color) !important;
+    }
+    &:focus {
+        // border-color: var(--main-color) !important;
+        border-width: 2px !important;
+    }
+}
+
+.PinSm .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinProperties();
+    }
+}
+
+.PinSmDisabled .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinPropertiesDisabled();
+    }
+}
+
+
+
+.PinMd .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinProperties(42px, 8px, 9px 14px,16px);
+    }
+}
+
+.PinMdDisabled .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinPropertiesDisabled(42px, 8px, 9px 14px,16px);
+    }
+}
+
+.PinLg .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinProperties(56px, 10px, 13px 16px,20px);
+    }
+}
+
+.PinLgDisabled .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinPropertiesDisabled(56px, 10px, 13px 16px,20px);
+    }
+}
+
+.PinXl .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinProperties(72px, 12px, 18px,24px);
+    }
+}
+
+.PinXlDisabled .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinPropertiesDisabled(72px, 12px, 18px,24px);
+    }
+}
+
+.PinXxl .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinProperties(90px, 14px, 23px 20px,32px);
+    }
+}
+
+.PinXxlDisabled .pincode-input-container
+{
+    .pincode-input-text
+    {
+        @include PinPropertiesDisabled(90px, 14px, 23px 20px,32px);
+    }
+}
+

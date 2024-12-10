@@ -1,0 +1,28 @@
+.Heading {
+  font-family: "Open Sans", sans-serif;
+  line-height: 160%;
+}
+.H1 {
+  font-weight: 300;
+  font-size: 108px;
+}
+.H2 {
+  font-weight: 300;
+  font-size: 84px;
+}
+.H3 {
+  font-weight: 400;
+  font-size: 64px;
+}
+.H4 {
+  font-weight: 400;
+  font-size: 48px;
+}
+.H5 {
+  font-weight: 500;
+  font-size: 36px;
+}
+.H6 {
+  font-weight: 700;
+  font-size: 28px;
+}

@@ -1,0 +1,1 @@
+export { exampleApiCol } from "./tableColumns";

@@ -1,0 +1,59 @@
+.pagination-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  background-color: white;
+  height: 56px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px #dadcde solid;
+
+  .pagination-changer {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-pagination-item-active {
+    border-radius: 100%;
+    background-color: black !important;
+    color: white;
+    border: none;
+  }
+
+  .ant-pagination-item {
+    border: none;
+    background-color: unset;
+  }
+
+  .ant-pagination-next .ant-pagination-item-link,
+  .ant-pagination-prev .ant-pagination-item-link {
+    border: none;
+    background-color: unset;
+  }
+
+  .select-from-total-page {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34px;
+    text-align: left;
+    color: #424242;
+  }
+
+  .row-per-page-text {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34px;
+    text-align: left;
+    margin-right: 10px;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 6px;
+    border: 1px #dadcde solid;
+  }
+}

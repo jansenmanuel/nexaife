@@ -1,0 +1,39 @@
+.InputContainer {
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin-top: 20px;
+}
+.LabelOnTop {
+  font-size: 16px !important;
+  margin: 0 0 8px;
+}
+.LabelBeside {
+  width: 32%;
+  margin-right: 4%;
+}
+.Input {
+  width: 100%;
+}
+.InputBox {
+  display: flex;
+  width: 64%;
+}
+
+.Message {
+  position: absolute;
+  margin: 8px 0px 0px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.Label {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}

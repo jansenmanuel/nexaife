@@ -1,0 +1,18 @@
+definitions:
+  services:
+    docker:
+      memory: 7168
+pipelines:
+  branches:
+    development-manual:
+      - step:
+          name: 'Build Image Development'
+          caches:
+            - docker
+          services:
+            - docker
+          size: 2x
+          script:
+            - docker login docker.nexcloud.id -u nexsoft -p Empat@444
+            - docker build --build-arg BUILD_ARG=dev-component -t docker.nexcloud.id/dev-component-ui:latest .
+            - docker push docker.nexcloud.id/dev-component-ui:latest

@@ -1,0 +1,131 @@
+@import '../../Constant/DesainToken.module.scss';
+
+.Badge {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #1D1D1D;
+  border: 1px solid $color-border-inverse;
+  padding: 4px 8px 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-phill;
+}
+
+.SmBase {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 11.72px;
+}
+
+.SmPill {
+  padding: 0 8px 0 8px;
+  width: fit-content;
+}
+
+.SmIcon {
+  padding: 2px;
+}
+
+.SmLegend {
+  width: 12px;
+  height: 12px;
+  padding: 0
+}
+
+.MdBase {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 16.41px;
+  border-width: 1.5px;
+}
+
+.MdPill {
+  padding: 0 8px 0 8px;
+  width: fit-content;
+}
+
+.MdIcon {
+  padding: 2px;
+}
+
+.MdLegend {
+  width: 16px;
+  height: 16px;
+  padding: 0
+}
+
+.LgBase {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  border-width: 2px;
+}
+
+.LgPill {
+  padding: 0 8px 0 8px;
+  width: fit-content;
+}
+
+.LgIcon {
+  padding: 2px;
+}
+
+.LgLegend {
+  width: 20px;
+  height: 20px;
+  padding: 0
+}
+
+.XlBase {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  line-height: 30px;
+  border-width: 2.5px;
+}
+
+.XlPill {
+  padding: 0 12px 0 12px;
+  width: fit-content;
+}
+
+.XlIcon {
+  padding: 2px;
+}
+
+.XlLegend {
+  width: 24px;
+  height: 24px;
+  padding: 0
+}
+
+.XxlBase {
+  width: 52px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.68px;
+  padding: 8px;
+  border-width: 3px;
+}
+
+.XxlPill {
+  padding: 0 14px 0 14px;
+  width: fit-content;
+}
+
+.XxlIcon {
+  padding: 10px;
+}
+
+.XxlLegend {
+  width: 28px;
+  height: 28px;
+  padding: 8px;
+}

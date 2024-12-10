@@ -1,0 +1,59 @@
+{
+  "HI": "Hai, {{name}}",
+  "TIME_PICKER": {
+    "PLACEHOLDER": "Pilih Waktu"
+  },
+  "LOGIN_GROCHAT" : {
+    "TITLE_LOGIN_GROCHAT": "Masuk dengan GroChat"
+  },
+  "INFORMATION_CARD":{
+    "TITLE_SUCCESS": "Berhasil",
+    "TITLE_WARNING": "Peringatan",
+    "TITLE_INFO": "Informasi",
+    "TITLE_ERROR": "Kesalahan",
+    "SEE_MORE": "Lihat selengkapnya",
+    "SEE_LESS": "Lihat lebih sedikit"
+  },
+  "TRANSFER_FILE": {
+    "CHOICES": "pilihan",
+    "SELECTED": "Terpilih",
+    "TITLE_LEFT": "Judul Kiri",
+    "TITLE_RIGHT": "Judul Kanan"
+  },
+  "CARD": {
+    "ROLE": "Peran",
+    "DATA_GROUP": "Grup Data",
+    "ROLE_NAME_CARD": "Kartu Nama Peran",
+    "DATA_GROUP_CARD": "Kartu Data Grup"
+  },
+  "MULTIPLE_SELECT": {
+    "PLACEHOLDER": "Pilih beberapa opsi"
+  },
+  "PHONE": {
+    "PLACEHOLDER": "Nomor telepon"
+  },
+  "FILE_UPLOAD":{
+    "DESCRIPTION": "Seret dan Letakkan file yang akan diunggah"
+  },
+  "PREVIEW_ADS": {
+    "TITLE_DEFAULT": "Iklan Anda Masuk disini"
+  },
+  "NOW": "Sekarang",
+  "OK": "Oke",
+  "RESET": "Ulang",
+  "APPLY": "Terapkan",
+  "SEARCH": "Cari",
+  "CANCEL": "Batal",
+  "CHOOSE_LOCATION": "Pilih lokasi",
+  "REGION_TITLE": "Pilih Wilayah",
+  "REGION_CHOOSE": "Pilih lokasi",
+  "OPTIONAL": "Opsional",
+  "ALERT":{
+    "SUCCESSFULLY": "Berhasil",
+    "WARNING": "Peringatan",
+    "INFO": "Informasi",
+    "ERROR": "Kesalahan"
+  },
+  "OF": "Dari",
+  "ROW_PER_PAGE": "Baris per halaman"
+}

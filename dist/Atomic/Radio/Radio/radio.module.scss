@@ -1,0 +1,166 @@
+$roboto-font : 'Roboto';
+$openSans-font : 'Open Sans';
+
+@mixin styleRadio (
+    $height: 20px,
+    $width: 20px,
+    $borderRadius: 1px,
+    $margin :3px
+){
+   height: $height;
+   width: $width;
+   border-radius: $borderRadius;
+}
+
+@mixin styleRadioUncheck (
+    $height: 20px,
+    $width: 20px,
+    $borderRadius: 1px,
+    $background: #FFFFFF,
+    $margin: 3px
+){
+   height: $height;
+   width: $width;
+   border-radius: $borderRadius;
+   background: $background;
+   margin: $margin;
+}
+
+@mixin wrapper (
+    $width : 10px,
+    $height : 10px,
+    $borderRadius: 25px,
+    $padding:3px
+){
+   width: $width;
+   height: $height ;
+   border-radius: $borderRadius;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-right: $padding;
+   padding-left: $padding;
+}
+
+@mixin wrapperUncheck (
+    $width : fit-content,
+    $height : 10px,
+    $border:2px solid #DADCDE,
+    $borderRadius: 25px
+){
+   width: $width;
+   height: $height;
+   border: $border;
+   border-radius: $borderRadius;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin labelRadio (
+    $marginLeft : 10px,
+    $fontSize: 16px,
+    $line-height: 24px,
+    $fontFamily : Roboto
+){
+    margin-left: $marginLeft;
+    font-size : $fontSize;
+    line-height: $line-height;
+    font-style: normal;
+    font-weight: 400;
+    font-family: $fontFamily;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin roboto-font(){
+    font-family: 'Roboto';
+}
+@mixin open-sans-font(){
+    font-family: 'Open';
+}
+
+// sm
+.Radiosm {
+    @include styleRadio(10px,10px ,37px ,0px )
+}
+.RadioUnchecksm {
+    @include styleRadioUncheck(10px,10px ,50% ,#FFFFFF , 0px )
+}
+.Wrappersm {
+    @include wrapper(16px,16px,37px,0px)
+}
+.WrapperUnchecksm{
+    @include wrapperUncheck(16px,16px,2px solid #DADCDE ,37px )
+}
+.labelRadiosm {
+    @include labelRadio(6px,16px,24px,$roboto-font)
+}
+
+
+// md
+.Radiomd {
+    @include styleRadio(12px,12px ,37px ,0px )
+}
+.RadioUncheckmd {
+    @include styleRadioUncheck(12px,12px ,37px ,#FFFFFF ,0px )
+}
+.Wrappermd {
+    @include wrapper(20px,20px,37px,0px)
+}
+.WrapperUncheckmd{
+    @include wrapperUncheck(20px,20px,2px solid #DADCDE ,37px )
+}
+.labelRadiomd {
+    @include labelRadio(8px,20px,30px,$roboto-font)
+}
+
+// lg
+.Radiolg {
+    @include styleRadio(14px,14px ,37px ,0px )
+}
+.RadioUnchecklg {
+    @include styleRadioUncheck(14px,14px ,37px ,#FFFFFF ,0px )
+}
+.Wrapperlg {
+    @include wrapper(24px,24px,37px,0px)
+}
+.WrapperUnchecklg{
+    @include wrapperUncheck(24px,24px,2px solid #DADCDE ,37px )
+}
+.labelRadiolg {
+    @include labelRadio(10px,24px,36px,$roboto-font)
+}
+
+// xl
+.Radioxl {
+    @include styleRadio(16px,16px ,37px ,0px )
+}
+.RadioUncheckxl {
+    @include styleRadioUncheck(16px,16px ,37px ,#FFFFFF ,0px )
+}
+.Wrapperxl {
+    @include wrapper(28px,28px,37px,0px)
+}
+.WrapperUncheckxl{
+    @include wrapperUncheck(28px,28px,2px solid #DADCDE ,37px )
+}
+.labelRadioxl {
+    @include labelRadio(10px,24px,36px,$openSans-font)
+}
+// xxl
+.Radioxxl {
+    @include styleRadio(18px,18px ,37px ,0px )
+}
+.RadioUncheckxxl {
+    @include styleRadioUncheck(18px,18px ,37px ,#FFFFFF ,0px )
+}
+.Wrapperxxl {
+    @include wrapper(32px,32px,37px,0px)
+}
+.WrapperUncheckxxl{
+    @include wrapperUncheck(32px,32px,2px solid #DADCDE ,37px )
+}
+.labelRadioxxl {
+    @include labelRadio(14px,40px,48px,$openSans-font)
+}

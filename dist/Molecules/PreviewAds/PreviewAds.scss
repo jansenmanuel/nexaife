@@ -1,0 +1,340 @@
+// main body css
+.custom-preview-ads {
+    // border: ;
+    width: 280px;
+    height: 490px;
+    border: #DADCDE 6px solid;
+    border-radius: 30px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-preview-ads {
+    // width: 280px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.footer-preview {
+    margin: 0px 10px;
+    height: 40px;
+}
+
+.body-preview {
+    // margin: 0px 15px;
+    height: 350px;
+}
+
+// end of main body css
+// css for default preview 
+
+.body-image-video {
+    height: 215px;
+    margin: 5px 0px;
+}
+
+// .body-sekeleton{
+//     height: 115px;
+//     // margin: 5px 0px;
+// }
+
+.body-preview .skeleton-carousel,
+.body-preview .body-image {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.border-skeleton-carousel {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-right: 10px !important;
+    margin-left: 10px;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+.border-skeleton-image {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    // margin-right: 10px;
+    // margin-left: 10px;
+    // width: 50%;
+    width: 115px;
+    height: 200px;
+    overflow: hidden;
+
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+.border-skeleton-image-bottom {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 50px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+
+.body-preview .skeleton-image {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.border-skeleton-carousel img {
+    // position: absolute;
+    margin-top: -60px;
+    top: -40px;
+    /* Adjust this value as needed */
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.border-skeleton-image img {
+    // position: absolute;
+    // margin-top: -60px;/* Adjust this value as needed */
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.body-carousel {
+    width: 268px;
+    height: 105px;
+    margin-bottom: 15px;
+}
+
+.body-carousel .ant-image,
+.body-carousel .ant-image .ant-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.body-carousel-adj {
+    width: 268px;
+    height: 105px;
+    margin-bottom: 15px;
+}
+
+.body-carousel-adj .ant-image,
+.body-carousel-adj .ant-image .ant-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+// .body-carousel-adj :global(
+//     // .ant-carousel .slick-next, .ant-carousel .slick-next:focus, .ant-carousel .slick-next:hover, .ant-carousel .slick-prev, .ant-carousel .slick-prev:focus, .ant-carousel .slick-prev:hover
+//     // .ant-carousel .slick-next
+//     button .ant-carousel .slick-arrow .slick-prev
+//     ){
+//     left: 0px !important;
+//     background: red;
+// }
+
+.body-carousel-adj :global(.ant-carousel .slick-arrow .slick-prev){
+    background: red;
+}
+
+.carousel-preview {
+    background-color: #818181;
+    width: 268px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 105px;
+    margin-right: 10px;
+    // margin-left: 10px;
+}
+
+.carousel-preview-adj {
+    background-color: #818181;
+    width: 268px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 105px;
+    margin-right: 10px;
+    line-height: 105px;
+    // margin-left: 10px;;
+}
+
+// end of default preview
+
+// css for props image type 
+.body-image-middle {
+    height: 115px;
+    margin: 5px 0px;
+}
+
+.skeleton-middle-image-top {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 105px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+.skeleton-middle-image-bottom {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+.skeleton-middle-image-top img {
+    // position: absolute;
+    margin-top: -95px;
+    top: -40px;
+    /* Adjust this value as needed */
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+// end of props middle image
+
+// start ads Video preview
+.body-ads-video-carousel {
+
+    // width: 270px;
+    height: 200px;
+    margin: 15px 0px;
+    overflow-x: hidden;
+    //ayu adjust
+}
+
+.body-ads-video-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.body-ads-middle {
+    height: 75px;
+    margin: 5px 0px;
+}
+
+
+.ads-video-preview {
+    display: flex;
+    flex-direction: row;
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 200px;
+    // overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    // background-color: black;
+}
+
+.ads-video-preview .video-preview {
+    width: 200px;
+    height: 200px;
+    // background-color: #818181;
+    margin: 0px 5px;
+    border-radius: 8px;
+    border: #DADCDE 2px solid;
+}
+
+
+.skeleton-ads-top {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 75px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+.skeleton-ads-bottom {
+    border: #DADCDE 2px solid;
+    border-top: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 60px;
+    overflow: hidden;
+    /* Ensure the image does not overflow the div */
+    position: relative;
+    /* For positioning the image */
+}
+
+
+// end ads video preview
+
+.body-preview .skeleton-middle-image-top {
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    width: 100%;
+    /* Ensures the container takes up the full width */
+    height: auto;
+    /* Keeps the height responsive */
+}
+
+.body-preview .skeleton-middle-image-top img {
+    max-width: 100%;
+    /* Ensures the image doesn’t overflow its container */
+    height: auto;
+    /* Maintain the image aspect ratio */
+    object-fit: contain;
+    /* Ensures the image is contained within its parent */
+}
+
+b{
+    text-align: center;
+    padding: 10px;
+}

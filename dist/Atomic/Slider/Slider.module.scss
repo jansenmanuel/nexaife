@@ -1,0 +1,38 @@
+.sliderContainer {
+  margin: 10px;
+  width: 100%;
+}
+
+.sliderContainer :global(.ant-slider) {
+  margin: 10px 12px;
+}
+
+.sliderContainer :global(.ant-slider-rail) {
+  background-color: #C6C6C6;
+}
+
+.sliderContainer :global(.ant-slider-track) {
+  background-color: #424242;
+}
+
+.sliderContainer :global(.ant-slider-handle) {
+  border: none;
+}
+
+.sliderContainer :global(.ant-slider:hover .ant-slider-track) {
+  background-color: #424242;
+}
+
+.sliderContainer :global(.ant-slider:hover .ant-slider-rail) {
+  background-color: #C6C6C6;
+}
+
+.sliderContainer :global(.ant-slider-handle) {
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+}
+
+.sliderContainer :global(.ant-slider-handle:focus) {
+  box-shadow: 0 0 0 5px rgba(104, 104, 104, 0.49);
+}

@@ -1,0 +1,9 @@
+.ModalHeaderTitle {
+  width: calc(100% - 24px);
+}
+.ModalHeaderTitleNoIcon {
+  width: 100%;
+}
+.ModalHeaderIcon {
+  width: 24px;
+}

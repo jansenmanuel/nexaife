@@ -1,0 +1,8 @@
+export const LIST_DEFAULT = "LIST_DEFAULT";
+export const LIST_SELECT = "LIST_SELECT";
+export const LIST_TOGGLE = "LIST_TOGGLE";
+export const LIST_DETAIL = "LIST_DETAIL";
+export const LIST_CHECKBOX = "LIST_CHECKBOX";
+
+export const LIST_CHECKBOX_ONLY = "LIST_CHECKBOX_ONLY"
+export const LIST_TOGGLE_ONLY = "LIST_TOGGLE_ONLY"

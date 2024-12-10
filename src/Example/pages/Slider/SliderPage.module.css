@@ -1,0 +1,43 @@
+.Container {
+    margin: 20px;
+}
+
+.Content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > div {
+        padding: 20px;
+    }
+}
+
+.Wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}

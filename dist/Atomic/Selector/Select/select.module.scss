@@ -1,0 +1,621 @@
+@import "../../../Constant/DesainToken.module.scss";
+
+:root {
+  --width-select: 500px;
+  --main-color-select: #1D1D1D;
+}
+
+@mixin labelProps($fz:14px,$lh:16.41px,$fw:500,$pd:6px) {
+  text-align: left;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Roboto";
+  font-weight: $fw;
+  padding-bottom: $pd;
+}
+
+@mixin SelectProperties($height:40px, $fontSize:16px, $pad:8px 12px, $bordCol:#DADCDE, $bordRad:6px,) {
+  align-items: center;
+  text-align: left;
+  width: auto !important;
+  height: $height !important;
+  font-size: $fontSize;
+  padding: $pad !important;
+  box-shadow: none !important;
+  border-color: $bordCol !important;
+  line-height: normal !important;
+  border-radius: $bordRad !important;
+  &:hover {
+    border-color: var(--main-color-select) !important;
+  }
+
+}
+
+@mixin labelProps($fz:14px,$lh:16.41px,$fw:500,$pd:6px) {
+  text-align: left;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Roboto";
+  font-weight: $fw;
+  padding-bottom: $pd;
+}
+
+@mixin SelectPropertiesDisabled($height: 40px, $fontSize: 16px, $pad: 8px 12px, $bordCol: #DADCDE, $bordRad: 6px, ) {
+  align-items: center;
+  text-align: left;
+  width: 500px;
+  height: $height !important;
+  font-size: $fontSize;
+  padding: $pad !important;
+  box-shadow: none !important;
+  border-color: $bordCol !important;
+  line-height: normal !important;
+  border-radius: $bordRad !important;
+}
+
+@mixin optionItem($pad: 8px 12px, $fz: 16px, $lh: 24px) {
+  padding: $pad;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+.containerAll :global(.ant-select-selector) {
+  width: var(--width-select);
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: none;
+  line-height: normal !important;
+
+  &:hover {
+    // border: 1px solid black;
+    box-shadow: none !important;
+  }
+}
+
+.containerSelectLine :global(.ant-select-single .ant-select-selector .ant-select-selection-placeholder) {
+  line-height: normal !important;
+  width: 500px
+}
+
+.containerSelectLine :global(.ant-select-single.ant-select-show-arrow .ant-select-selection-item) {
+  line-height: normal !important;
+  width: 500px
+}
+
+.containerSelectLine :global(.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector) {
+  background-color: #f1f1f1;
+
+  & :global(.ant-select-selection-placeholder) {
+    color: #818181;
+  }
+}
+
+// .containerSelect :global(.ant-select:not(.ant-select-disabled):hover .ant-select-selector) {
+//   border: 1px solid var(--main-color-select);
+//   align-items: center;
+//   display: flex;
+//   box-shadow: none !important;
+// }
+
+// .selectContainer {
+//   // border: 1px solid #DADCDE;
+//   max-width: var(--width-select);
+//   // border-radius: 0.26vw;
+//   &:hover {
+//     border: 1px solid var(--main-color-select);
+//     max-width: var(--width-select);
+//   }
+// }
+// .selectContainerSm :global(.ant-select:not(.ant-select-disabled):hover .ant-select-selector) {
+//   border: 1px solid #1D1D1D;
+//   box-shadow: none
+//   // @include ContainerSelectSize()
+// }
+
+// .selectContainerSm :global(.ant-select-focused .ant-select-single .ant-select-show-arrow ) {
+//   box-shadow: none
+// }
+
+// .selectContainerMd {
+//   @include ContainerSelectSize(10px 14px,8px,#DADCDE,50px );
+// }
+// .selectContainerLg {
+//   @include ContainerSelectSize(12px 16px,10px,#DADCDE,60px );
+// }
+// .selectContainerXl {
+//   @include ContainerSelectSize(14px 18px,12px,#DADCDE,72px );
+// }
+// .selectContainerXxl {
+//   @include ContainerSelectSize(16px 20px,14px,#DADCDE,80px );
+// }
+
+// .selectContainerDisabled {
+//   // border: 1px solid #DADCDE;
+//   min-width: var(--width-select);
+//   // border-radius: 0.26vw;
+//   &:hover {
+//     // border: 1px solid #DADCDE;
+//     max-width: var(--width-select);
+//   }
+// }
+
+// .selectContainerActiveSm {
+//   border-color: var(--main-color-select) !important;
+//   // @include ContainerSelectSize(8px 12px,6px, var(--main-color-select));  // border: 2px solid var(--main-color-select);
+// }
+
+// .selectContainerActiveMd {
+//   border-color: var(--main-color-select);
+//   // @include ContainerSelectSize(10px 14px,8px, var(--main-color-select),50px);
+// }
+// .selectContainerActiveLg {
+//   @include ContainerSelectSize(12px 16px,10px, var(--main-color-select),60px );
+// }
+// .selectContainerActiveXl {
+//   @include ContainerSelectSize(14px 18px,12px, var(--main-color-select),72px);
+// }
+// .selectContainerXActivexl {
+//   @include ContainerSelectSize(16px 20px,14px,var(--main-color-select),80px);
+// }
+
+.containerSelect :global(.ant-select:not(.ant-select-disabled):active .ant-select-selector) {
+  border: 1px solid var(--main-color-select);
+  align-items: center;
+  display: flex;
+}
+
+.containerIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.selectSizeSm {
+  & :global(.ant-select-selector) {
+    @include SelectProperties();
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 12px;
+  }
+  @include fontBodySmall
+}
+
+.selectSizeSmDisabled {
+  & :global(.ant-select-selector) {
+    @include SelectPropertiesDisabled();
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 12px;
+  }
+  @include fontBodySmall
+}
+
+.selectSizeSmError :global(.ant-select-selector) {
+  @include SelectPropertiesDisabled($bordCol:$color-border-danger-strong);
+}
+
+.selectSizeSmActive {
+  & :global(.ant-select-selector) {
+    @include SelectProperties($bordCol: var(--main-color-select));
+  }
+  & :global(.ant-select-arrow) {
+    right: 12px;
+  }
+  @include fontBodySmall
+}
+
+.selectSizeMd {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(50px, 20px, 10px 14px, $bordRad: 8px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 14px;
+  }
+  @include fontBodyMedium
+}
+
+.selectSizeMdDisabled {
+  & :global(.ant-select-selector) {
+    @include SelectPropertiesDisabled(50px, 20px, 10px 14px, $bordRad: 8px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 14px;
+  }
+  @include fontBodyMedium
+}
+
+.selectSizeMdError :global(.ant-select-selector) {
+  @include SelectPropertiesDisabled(50px,20px,10px 14px,$bordCol:$color-border-danger-strong, $bordRad:8px);
+}
+
+.selectSizeMdActive {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(50px, 20px, 10px 14px, var(--main-color-select), 8px);
+  }
+  & :global(.ant-select-arrow) {
+    right: 14px;
+  }
+  @include fontBodyMedium
+}
+
+.selectSizeLg {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(60px, 24px, 12px 16px, $bordRad: 10px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 16px;
+  }
+  @include fontBodyLarge
+}
+
+.selectSizeLgDisabled {
+  & :global(.ant-select-selector) {
+    @include SelectPropertiesDisabled(60px, 24px, 12px 16px, $bordRad: 10px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 16px;
+  }
+  @include fontBodyLarge
+}
+
+.selectSizeLgError :global(.ant-select-selector) {
+  @include SelectPropertiesDisabled(60px,24px,12px 16px,$bordCol:$color-border-danger-strong, $bordRad:10px);
+}
+
+.selectSizeLgActive {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(60px, 24px, 12px 16px, var(--main-color-select), $bordRad: 10px);
+  }
+  & :global(.ant-select-arrow) {
+    right: 16px;
+  }
+  @include fontBodyLarge
+}
+
+.selectSizeXl {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(72px, 32px, 14px 18px, $bordRad: 12px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 18px;
+  }
+  @include fontSubTitleLarge
+}
+
+.selectSizeXlDisabled {
+  & :global(.ant-select-selector) {
+    @include SelectPropertiesDisabled(72px, 32px, 14px 18px, $bordRad: 12px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 18px;
+  }
+  @include fontSubTitleLarge
+}
+
+.selectSizeXlError :global(.ant-select-selector) {
+  @include SelectPropertiesDisabled(72px,32px,14px 18px,$bordCol:$color-border-danger-strong, $bordRad:12px);
+}
+
+
+.selectSizeXlActive {
+  & :global(.ant-select-selector) {
+      @include SelectProperties(72px, 32px, 14px 18px, var(--main-color-select), $bordRad: 12px);
+  }
+  & :global(.ant-select-arrow) {
+    right: 18px;
+  }
+  @include fontSubTitleLarge
+}
+
+.selectSizeXxl {
+  & :global(.ant-select-selector) {
+    @include SelectProperties(80px, 40px, 16px 20px, $bordRad: 14px);;
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 20px;
+  }
+  @include fontSubTitleLarge
+}
+
+.selectSizeXxlDisabled {
+  & :global(.ant-select-selector) {
+    @include SelectPropertiesDisabled(80px, 40px, 16px 20px, $bordRad: 12px);
+  }
+
+  & :global(.ant-select-arrow) {
+    right: 20px;
+  }
+  @include fontSubTitleLarge
+}
+.selectSizeXxlError :global(.ant-select-selector) {
+  @include SelectPropertiesDisabled(80px,48px,16px 20px,$bordCol:$color-border-danger-strong,$bordRad:14px );
+}
+
+.selectSizeXxlActive {
+  & :global(.ant-select-selector) {
+      @include SelectProperties(80px, 40px, 16px 20px, var(--main-color-select), 14px);
+  }
+  & :global(.ant-select-arrow) {
+    right: 20px;
+  }
+  @include fontSubTitleLarge
+}
+
+.itemOptionSm :global(.ant-select-item) {
+  @include optionItem()
+}
+
+.itemOptionMd :global(.ant-select-item) {
+  @include optionItem(8px 14px, 20px, 30px)
+}
+
+.itemOptionLg :global(.ant-select-item) {
+  @include optionItem(10px 16px, 24px, 36px)
+}
+
+.itemOptionXl :global(.ant-select-item) {
+  @include optionItem(12px 18px, 32px, normal)
+}
+
+.itemOptionXxl :global(.ant-select-item) {
+  @include optionItem(14px 20px, 40px, 48px)
+}
+
+.containerSelectLinePhoneNumber :global(.ant-select-single.ant-select-show-arrow .ant-select-selection-item) {
+  padding-right: 0px !important;
+  text-align: left !important;
+}
+
+.containerSelectLinePhoneNumber :global(.ant-select-single .ant-select-selector .ant-select-selection-placeholder) {
+  padding-right: 0px !important;
+  text-align: left !important;
+}
+
+
+// V_2_0_3
+
+@mixin containerV2_0_3($br: $radius-xs, $bd: 1px solid $color-border, $pd: $spacing-sm-8 $spacing-sm-12, $gap: $spacing-sm-4, $bgcolor: #FFFFFF) {
+  width: 500px;
+  border-radius: $br;
+  border: $bd;
+  padding: $pd;
+  gap: $gap;
+  position: relative;
+  background-color: $bgcolor ;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--main-color-select);
+  }
+}
+
+.containerSelectSizeSmV2_0_3 {
+  @include containerV2_0_3()
+}
+
+.containerSelectSizeMdV2_0_3 {
+  @include containerV2_0_3($radius-sm, 1px solid $color-border, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6)
+}
+
+.containerSelectSizeLgV2_0_3 {
+  @include containerV2_0_3($radius-md, 1px solid $color-border, $spacing-sm-12 $spacing-md-16, $spacing-sm-8)
+}
+
+.containerSelectSizeXlV2_0_3 {
+  @include containerV2_0_3($radius-lg, 1px solid $color-border, $spacing-sm-14 $spacing-md-18, $spacing-sm-10)
+}
+
+.containerSelectSizeXxlV2_0_3 {
+  @include containerV2_0_3($radius-xl, 1px solid $color-border, $spacing-md-16 $spacing-md-20, $spacing-sm-12)
+}
+
+.containerSelectSizeSmErrorV2_0_3 {
+  @include containerV2_0_3($bd:1px solid $color-border-danger-strong);
+  &:hover {
+    border-color:$color-border-danger-strong !important
+  }
+}
+
+.containerSelectSizeMdErrorV2_0_3 {
+  @include containerV2_0_3($radius-sm, 1px solid $color-border-danger-strong, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6);
+  &:hover {
+    border-color:$color-border-danger-strong !important
+  }
+}
+
+.containerSelectSizeLgErrorV2_0_3 {
+  @include containerV2_0_3($radius-md, 1px solid $color-border-danger-strong, $spacing-sm-12 $spacing-md-16, $spacing-sm-8);
+  &:hover {
+    border-color:$color-border-danger-strong !important
+  }
+}
+
+.containerSelectSizeXlErrorV2_0_3 {
+  @include containerV2_0_3($radius-lg, 1px solid $color-border-danger-strong, $spacing-sm-14 $spacing-md-18, $spacing-sm-10);
+  &:hover {
+    border-color:$color-border-danger-strong !important
+  }
+}
+
+.containerSelectSizeXxlErrorV2_0_3 {
+  @include containerV2_0_3($radius-xl, 1px solid $color-border-danger-strong, $spacing-md-16 $spacing-md-20, $spacing-sm-12);
+  &:hover {
+    border-color:$color-border-danger-strong !important
+  }
+}
+
+.containerSelectSizeSmDisabledV2_0_3 {
+  @include containerV2_0_3($bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+  &:hover {
+    border-color: $color-border;
+  }
+
+}
+
+.containerSelectSizeMdDisabledV2_0_3 {
+  @include containerV2_0_3($radius-sm, 1px solid $color-border, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+.containerSelectSizeLgDisabledV2_0_3 {
+  @include containerV2_0_3($radius-md, 1px solid $color-border, $spacing-sm-12 $spacing-md-16, $spacing-sm-8, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+  &:hover {
+    border-color: $color-border;
+  }
+
+}
+
+.containerSelectSizeXlDisabledV2_0_3 {
+  @include containerV2_0_3($radius-lg, 1px solid $color-border, $spacing-sm-14 $spacing-md-18, $spacing-sm-10, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+.containerSelectSizeXxlDisabledV2_0_3 {
+  @include containerV2_0_3($radius-xl, 1px solid $color-border, $spacing-md-16 $spacing-md-20, $spacing-sm-12, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+@mixin SelectInputPropertiesV2_0_3($wd:456px, $color:$placeholder-color) {
+  width: $wd;
+  color: $color;
+}
+
+.selectInput_PH_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3();
+  @include fontBodySmall();
+}
+
+.selectInput_DB_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($color:$color-text-placeholder-disabled);
+  @include fontBodySmall();
+}
+
+.selectInput_ACT_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($color:$color-text );
+  @include fontBodySmall();
+}
+
+.selectInput_PH_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:446px);
+  @include fontBodyMedium();
+}
+
+.selectInput_DB_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:446px,$color:$color-text-placeholder-disabled);
+  @include fontBodyMedium();
+}
+
+.selectInput_ACT_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:446px,$color:$color-text );
+  @include fontBodyMedium();
+}
+
+.selectInput_PH_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:436px);
+  @include fontBodyLarge();
+}
+
+.selectInput_DB_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:436px,$color:$color-text-placeholder-disabled);
+  @include fontBodyLarge();
+}
+
+.selectInput_ACT_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:436px,$color:$color-text );
+  @include fontBodyLarge();
+}
+
+.selectInput_PH_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:426px);
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.selectInput_DB_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:426px,$color:$color-text-placeholder-disabled);
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.selectInput_ACT_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:426px,$color:$color-text );
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.selectInput_PH_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:412px);
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.selectInput_DB_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:412px,$color:$color-text-placeholder-disabled);
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.selectInput_ACT_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd:412px,$color:$color-text );
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.containerOptions {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 250px;
+  transition: max-height 0.3s ease-out;
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.LabelTextSm {
+  @include labelProps()
+}
+.LabelTextMd {
+  @include labelProps(16px, 24px,$pd:8px)
+}
+.LabelTextLg {
+  @include labelProps(20px, 30px,$pd:10px)
+}
+.LabelTextXl {
+  @include labelProps(24px, 36px,$pd:12px)
+}
+.LabelTextXxl {
+  @include labelProps(32px,43.58px,600,14px)
+}
+
+.optionalText {
+  color: $color-text-disabled;
+}

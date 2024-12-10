@@ -1,0 +1,141 @@
+@import '../../Constant/DesainToken.module.scss';
+
+.Rte {
+  min-height: 150px;
+  min-width: 450px;
+  width: 450px;
+  max-width: 600px;
+  text-align: left;
+
+
+  :global(.tiptap .is-editor-empty:first-child::before) {
+    color: $color-text-placeholder;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+
+}
+
+.Rte .disabled {
+  background-color: $color-background-disabled;
+}
+
+.Content {
+  padding: 10px 14px;
+  background: $color-background;
+  min-height: 100px;
+  border: 1px solid $color-border;
+  border-radius: 0 0 8px 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Content:focus {
+  outline: none;
+  border: #13A1DC solid 1px;
+}
+
+.Content:hover {
+  border: #13A1DC solid 1px;
+}
+
+.Content > * + * {
+  margin-top: 0.75em !important;
+}
+
+.Content p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1D1D1D;
+}
+
+.Content ul {
+  padding: 0 1rem;
+  list-style: disc !important;
+}
+
+.Content ol {
+  padding: 0 2rem;
+  list-style: decimal !important;
+}
+
+.Content h1,
+.Content h2,
+.Content h3,
+.Content h4,
+.Content h5,
+.Content h6 {
+  line-height: 1.1;
+}
+
+.Content code {
+  background-color: rgba(#616161, 0.1);
+  color: #616161;
+}
+
+.Content pre {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'JetBrainsMono', monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.Content code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.Content blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid #999999;
+}
+
+.Content hr {
+  border: none;
+  border-top: 3px solid #999999;
+  margin: 2rem 0;
+}
+
+.heading3 {
+  font-size: 15px;
+}
+
+.Rte :global(.tiptap) {
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    color: #68cef8;
+  }
+}
+
+.Toolbar {
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+  border: 1px solid $color-border;
+  border-bottom-width: 0;
+  background-color: $color-background-gray;
+  position: relative;
+}
+
+.Icon {
+  &:Hover {
+    cursor: pointer;
+  }
+}
+
+.DisabledIcon {
+  path {
+    fill: $color-icon-disabled;
+  }
+}
+
+:global(.ant-divider) {
+  background-color: $color-border;
+}

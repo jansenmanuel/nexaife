@@ -1,0 +1,661 @@
+@charset "UTF-8";
+:root {
+  --font-style: normal;
+  --font-weight: 600;
+  --display: flex;
+  --align-items: center;
+  --text-align: center;
+  --bordersm: 0.0625rem solid;
+  --borderlg: 0.125rem solid;
+  --border-radius-xs: 0.25rem;
+  --border-radius-sm: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.625rem;
+  --border-radius-xl: 0.75rem;
+  --border-radius-xxl: 0.875rem;
+  --padding-xs: 0.25rem 0.75rem 0.375rem 0.75rem;
+  --padding-sm: 0.25rem 1rem 0.375rem 1rem;
+  --padding-md: 0.5rem 1.25rem 0.5rem 1.25rem;
+  --padding-lg: 0.75rem 1.5rem 0.75rem 1.5rem;
+  --padding-xl: 0.875rem 2rem;
+  --padding-xxl: 1.25rem 2.5rem 1.375rem 2.5rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.5rem;
+  /* --font-size-lg: 1.25vw; */
+  --font-size-xl: 2rem;
+  /* --font-size-xl: 1.67vw; */
+  --font-size-xxl: 2.5rem;
+  /* --font-size-xxl: 2.08vw; */
+  --line-height-xs: 1.375rem;
+  --line-height-sm: 1.5625rem;
+  --line-height-md: 1.6875rem;
+  --line-height-lg: 1.875rem;
+  --line-height-xl: 2.0625rem;
+  --line-height-xxl: 2.375rem;
+  --main-color: white;
+  --secondary-color: white;
+}
+
+$paddingXsOnlyIcon: 0.375rem;
+$paddingSmOnlyIcon: 0.4375rem;
+$paddingMdOnlyIcon: 0.625rem;
+$paddingLgOnlyIcon: 0.875rem;
+$paddingXlOnlyIcon: 1.125rem;
+$paddingXxlOnlyIcon: 1.4375rem;
+
+@mixin Button($color: #ffffff) {
+  color: $color;
+  white-space: nowrap;
+  align-items: var(--align-items);
+  text-align: var(--text-align);
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin ButtonProperties($width, $height, $display: flex) {
+  min-width: $width;
+  height: $height;
+  justify-content: center;
+  display: $display;
+  align-items: center;
+}
+
+@mixin ButtonPropertiesOnlyIcon($width, $height, $pd: 0.3125rem 0.3125rem) {
+  width: $width;
+  height: $height;
+  padding: $pd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ButtonText($sizeFont: 1.25rem, $fontWeight: 600, $styleFont: normal) {
+  font-size: $sizeFont;
+  font-weight: $fontWeight;
+  font-style: $styleFont;
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin ButtonPropertiesMediaScreen($width, $height) {
+  min-width: $width;
+  height: $height;
+  justify-content: center;
+  display: flex;
+}
+
+@mixin ButtonContainerLink($bb: 0.0625rem, $color: #0068be) {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.0625rem solid transparent;
+  &:hover {
+    border-bottom: $bb solid $color;
+  }
+  .iconPrefixXs,
+  .iconPrefixSm,
+  .iconPrefixMd {
+    padding-right: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconPrefixLg {
+    padding-right: 0.375rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconPrefixXl,
+  .iconPrefixXxl {
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixXs,
+  .iconSuffixSm,
+  .iconSuffixMd {
+    padding-left: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixXl,
+  .iconSuffixXxl {
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixLg {
+    padding-left: 0.375rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.button-primary {
+  @include Button($color: #ffffff);
+  &:disabled:hover {
+    border: 0.0625rem solid #dddddd;
+    cursor: not-allowed;
+    opacity: 1;
+    background-color: #f1f1f1;
+  }
+  &:disabled {
+    border: 0.0625rem solid #dddddd;
+    color: #818181 !important;
+    background-color: #f1f1f1;
+  }
+  background-color: var(--main-color);
+  border: 0.0625rem solid var(--main-color);
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  border: 0.0625rem solid var(--main-color);
+}
+
+.button-secondary {
+  @include Button($color: var(--main-color));
+  &:disabled:hover {
+    cursor: not-allowed;
+    background-color: transparent;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    color: #acacac !important;
+    background-color: transparent;
+  }
+  color: var(--main-color);
+  border: 0.0625rem solid var(--main-color);
+  background-color: transparent;
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  // border: var(--bordersm) var(--main-color);
+  background-color: #f1f1f1;
+}
+
+.button-tertiary {
+  &:disabled:hover {
+    cursor: not-allowed;
+    border: 0.0625rem solid transparent;
+    background-color: transparent;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    border: 0.0625rem solid transparent;
+    color: #acacac !important;
+    background-color: transparent;
+  }
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-color);
+  border: 0.0625rem solid transparent;
+  background-color: transparent;
+}
+
+.button-tertiary:hover {
+  cursor: pointer;
+  border: 0.0625rem solid transparent;
+  background-color: #f1f1f1;
+}
+
+.button-link {
+  color: var(--blue-100, #0068be);
+  border: none;
+  background: transparent;
+  // &:hover{
+  //   text-decoration-line: underline
+  // }
+  &:disabled,
+  &:disabled:hover {
+    text-decoration: none;
+    cursor: not-allowed;
+    color: var(--neutral-disable, #acacac);
+  }
+}
+
+.ButtonMd {
+  @include ButtonProperties(6.6875rem, 2.625rem);
+  // @include ButtonProperties(5.57vw, 2.625rem);
+  @include ButtonText($sizeFont: var(--font-size-md));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonMdLink {
+  @include ButtonProperties(6.6875rem, 2.625rem, grid);
+  // @include ButtonProperties(5.57vw, 2.625rem);
+  @include ButtonText($sizeFont: var(--font-size-md));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonMdSuffPreffIcon {
+  @include ButtonProperties(7.6875rem, 2.625rem);
+  // @include ButtonProperties(6.41vw, 2.625rem);
+  @include ButtonText($sizeFont: var(--font-size-md));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: var(--padding-md);
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonMdSuffPreffIconLink {
+  @include ButtonProperties(7.6875rem, 2.625rem, grid);
+  // @include ButtonProperties(6.41vw, 2.625rem);
+  @include ButtonText($sizeFont: var(--font-size-md));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonXs {
+  @include ButtonProperties(4rem, 1.625rem);
+  // @include ButtonProperties(3.33vw, 1.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xs));
+  padding: var(--padding-xs);
+  border-radius: var(--border-radius-xs);
+  align-items: center;
+}
+
+.ButtonXsLink {
+  @include ButtonProperties(4rem, 1.625rem);
+  // @include ButtonProperties(3.33vw, 1.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xs));
+  padding: 0;
+  border-radius: var(--border-radius-xs);
+}
+
+.ButtonXsSuffPreffIcon {
+  @include ButtonProperties(4.75rem, 1.625rem);
+  // @include ButtonProperties(3.96vw, 1.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xs));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0.25rem 0.5rem 0.375rem 0.5rem;
+  align-items: center;
+  border-radius: var(--border-radius-xs);
+}
+
+.ButtonSm {
+  @include ButtonProperties(5.375rem, 2rem);
+  // @include ButtonProperties(4.48vw, 2rem);
+  @include ButtonText($sizeFont: var(--font-size-sm));
+  padding: var(--padding-sm);
+  border-radius: var(--border-radius-sm);
+}
+
+.ButtonSmLink {
+  @include ButtonProperties(5.375rem, 2rem);
+  // @include ButtonProperties(4.48vw, 2rem);
+  @include ButtonText($sizeFont: var(--font-size-sm));
+  padding: 0;
+  border-radius: var(--border-radius-sm);
+}
+
+.ButtonSmSuffPreffIcon {
+  @include ButtonProperties(6.25rem, 2rem);
+  // @include ButtonProperties(5.21vw, 2rem);
+  @include ButtonText($sizeFont: var(--font-size-sm));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0.25rem 0.75rem 0.375rem 0.75rem;
+  border-radius: var(--border-radius-md);
+  align-items: center;
+}
+
+.ButtonSmSuffPreffIconLink {
+  @include ButtonProperties(6.25rem, 2rem);
+  // @include ButtonProperties(5.21vw, 2rem);
+  @include ButtonText($sizeFont: var(--font-size-sm));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0;
+  border-radius: var(--border-radius-md);
+  align-items: center;
+}
+
+.ButtonLg {
+  @include ButtonProperties(8rem, 3.5rem);
+  // @include ButtonProperties(6.67vw, 3.5rem);
+  @include ButtonText($sizeFont: var(--font-size-lg));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-lg);
+  padding: var(--padding-lg);
+  border-radius: var(--border-radius-lg);
+}
+
+.ButtonLgLink {
+  @include ButtonProperties(8rem, 3.5rem);
+  // @include ButtonProperties(6.67vw, 3.5rem);
+  @include ButtonText($sizeFont: var(--font-size-lg));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-lg);
+  padding: var(--padding-lg);
+  border-radius: var(--border-radius-lg);
+}
+
+.ButtonLgSuffPreffIcon {
+  @include ButtonProperties(9.5rem, 3.5rem);
+  // @include ButtonProperties(7.92vw, 3.5rem);
+  @include ButtonText($sizeFont: var(--font-size-lg));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0.6875rem 1.25rem 0.75rem 1.25rem;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonLgSuffPreffIconLink {
+  @include ButtonProperties(9.5rem, 3.5rem);
+  // @include ButtonProperties(7.92vw, 3.5rem);
+  @include ButtonText($sizeFont: var(--font-size-lg));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonXl {
+  @include ButtonProperties(10.6875rem, 4.5rem);
+  // @include ButtonProperties(8.91vw, 4.5rem);
+  @include ButtonText($sizeFont: var(--font-size-xl));
+  padding: var(--padding-xl);
+  border-radius: var(--border-radius-xl);
+}
+
+.ButtonXlLink {
+  @include ButtonProperties(10.6875rem, 4.5rem);
+  // @include ButtonProperties(8.91vw, 4.5rem);
+  @include ButtonText($sizeFont: var(--font-size-xl));
+  border-radius: var(--border-radius-xl);
+}
+
+.ButtonXlSuffPreffIcon {
+  @include ButtonProperties(12.1875rem, 4.5rem);
+  // @include ButtonProperties(10.16vw, 4.5rem);
+  @include ButtonText($sizeFont: var(--font-size-xl));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  align-items: center;
+  padding: 0.875rem 1.5rem;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonXlSuffPreffIconLink {
+  @include ButtonProperties(12.1875rem, 4.5rem);
+  // @include ButtonProperties(10.16vw, 4.5rem);
+  @include ButtonText($sizeFont: var(--font-size-xl));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  align-items: center;
+  padding: 0;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonXxl {
+  // @include ButtonProperties(11.09vw, 5.625rem);
+  @include ButtonProperties(13.3125rem, 5.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xxl));
+  padding: var(--padding-xxl);
+  border-radius: var(--border-radius-xxl);
+}
+
+.ButtonXxlLink {
+  // @include ButtonProperties(11.09vw, 5.625rem);
+  @include ButtonProperties(13.3125rem, 5.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xxl));
+  border-radius: var(--border-radius-xxl);
+}
+
+.ButtonXxlSuffPreffIcon {
+  @include ButtonProperties(15.3125rem, 5.625rem);
+  // @include ButtonProperties(12.76vw, 5.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xxl));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 1.25rem 2rem 1.375rem 2rem;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonXxlSuffPreffIconLink {
+  @include ButtonProperties(15.3125rem, 5.625rem);
+  // @include ButtonProperties(12.76vw, 5.625rem);
+  @include ButtonText($sizeFont: var(--font-size-xxl));
+  font-style: var(--font-style);
+  font-weight: var(--font-weight);
+  padding: 0;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+}
+
+.borderSmall {
+  border: var(--bordersm) var(--main-color);
+  &:hover {
+    border: var(--bordersm) var(--main-color);
+  }
+  &:disabled {
+    border: var(--bordersm) #dddddd;
+  }
+  &:disabled:hover {
+    border: var(--bordersm) #dddddd;
+  }
+}
+
+.borderLarge {
+  border: var(--borderlg) var(--main-color);
+  &:hover {
+    border: var(--borderlg) var(--main-color);
+  }
+  &:disabled {
+    border: var(--borderlg) #dddddd;
+  }
+}
+
+.containerButton {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  // &:hover {
+  //   border-bottom: 0.0625rem solid #0068BE;
+  // }
+  .iconPrefixXs,
+  .iconPrefixSm,
+  .iconPrefixMd {
+    padding-right: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconPrefixLg {
+    padding-right: 0.375rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconPrefixXl,
+  .iconPrefixXxl {
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixXs,
+  .iconSuffixSm,
+  .iconSuffixMd {
+    padding-left: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixXl,
+  .iconSuffixXxl {
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .iconSuffixLg {
+    padding-left: 0.375rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.containerButtonLink {
+  @include ButtonContainerLink();
+}
+
+.containerButtonIb {
+  @include ButtonContainerLink($color: var(--main-color));
+}
+
+.containerButtonIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonXsOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-xs));
+  @include ButtonPropertiesOnlyIcon(1.625rem, 1.625rem);
+  // @include ButtonPropertiesOnlyIcon(1.625rem, 1.625rem);
+  border-radius: var(--border-radius-xs);
+}
+
+.ButtonSmOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-sm));
+  @include ButtonPropertiesOnlyIcon(2rem, 2rem, 0.5rem 0.5rem);
+  // @include ButtonPropertiesOnlyIcon(1.67vw, 1.67vw);
+  border-radius: var(--border-radius-sm);
+}
+
+.ButtonMdOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-md));
+  @include ButtonPropertiesOnlyIcon(2.625rem, 2.625rem, 0.625rem 0.625rem);
+  // @include ButtonPropertiesOnlyIcon(2.19vw, 2.19vw);
+  border-radius: var(--border-radius-md);
+}
+
+.ButtonLgOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-lg));
+  @include ButtonPropertiesOnlyIcon(3.5rem, 3.5rem, 0.875rem 0.875rem);
+  // @include ButtonPropertiesOnlyIcon(2.92vw, 2.92vw);
+  border-radius: var(--border-radius-lg);
+}
+
+.ButtonXlOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-xl));
+  @include ButtonPropertiesOnlyIcon(4.5rem, 4.5rem, 1.125rem 1.125rem);
+  border-radius: var(--border-radius-xl);
+}
+
+.ButtonXxlOnlyIcon {
+  @include ButtonText($sizeFont: var(--font-size-xxl));
+  @include ButtonPropertiesOnlyIcon(5.625rem, 5.625rem, 1.5625rem 1.5625rem);
+  // @include ButtonPropertiesOnlyIcon(4.69vw, 4.69vw);
+  // padding: $paddingXxlOnlyIcon;
+  border-radius: var(--border-radius-xxl);
+}
+
+.containerButtonIcon {
+  .onlyIcon {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.roundedIcon {
+  border-radius: 100%;
+}
+
+.errorButton {
+  border: 0.0625rem solid rgb(255, 77, 79) !important;
+}
+
+.buttonSize {
+  @include ButtonPropertiesMediaScreen(13.3125rem, 5.625rem);
+  @include ButtonText(2.5rem, 600, normal);
+}
+
+// xs
+@media screen and (max-width: 35.9375rem) {
+  .buttonSize {
+    @include ButtonPropertiesMediaScreen(4rem, 1.625rem);
+    @include ButtonText(0.75rem, 600, normal);
+  }
+}
+
+// sm
+@media screen and (max-width: 47.9375rem) and (min-width: 36rem) {
+  .buttonSize {
+    @include ButtonPropertiesMediaScreen(5.375rem, 2rem);
+    @include ButtonText(1rem, 600, normal);
+  }
+}
+
+// md
+@media screen and (max-width: 61.9375rem) and (min-width: 48rem) {
+  .buttonSize {
+    @include ButtonPropertiesMediaScreen(6.6875rem, 2.625rem);
+    @include ButtonText(1.25rem, 600, normal);
+  }
+}
+
+// lg
+@media screen and (max-width: 74.9375rem) and (min-width: 62rem) {
+  .buttonSize {
+    @include ButtonPropertiesMediaScreen(8rem, 3.5rem);
+    @include ButtonText(1.5rem, 600, normal);
+  }
+}
+
+// xl
+@media screen and (min-width: 75rem) and (max-width: 87.4375rem) {
+  .buttonSize {
+    @include ButtonPropertiesMediaScreen(10.6875rem, 4.5rem);
+    @include ButtonText(2rem, 600, normal);
+  }
+}
+
+.badgeStyleXs :global(.ant-badge .ant-badge-dot) {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  background: var(--red-100, #cb1801);
+}
+
+.badgeStyleSm :global(.ant-badge .ant-badge-dot) {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  background: var(--red-100, #cb1801);
+}
+
+.badgeStyleMd :global(.ant-badge .ant-badge-dot) {
+  width: 1rem !important;
+  height: 1rem !important;
+  background: var(--red-100, #cb1801);
+}
+
+.badgeStyleLg :global(.ant-badge .ant-badge-dot) {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  background: var(--red-100, #cb1801);
+}
+
+.badgeStyleXl :global(.ant-badge .ant-badge-dot) {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background: var(--red-100, #cb1801);
+}
+
+.badgeStyleXxl :global(.ant-badge .ant-badge-dot) {
+  width: 1.75rem !important;
+  height: 1.75rem !important;
+  background: var(--red-100, #cb1801);
+}

@@ -1,0 +1,16 @@
+@import "../../Constant/DesainToken.module.scss";
+
+.progressbar-customize-title-lg {
+    @include fontTitleMedium();
+    text-align: left
+}
+
+.progressbar-customize-title-md {
+    @include fontTitleMedium();
+    text-align: left
+}
+
+.progressbar-customize-title-sm {
+    @include fontTitleSmall();
+    text-align: left
+}

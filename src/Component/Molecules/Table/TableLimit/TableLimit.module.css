@@ -1,0 +1,38 @@
+.SelectBox select {
+  outline: none;
+}
+.SelectBox select::focus-inner {
+  border: 0;
+}
+.SelectBox {
+  width: 55px ;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.SelectBox:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 8px;
+  top: 1px;
+  padding: 0px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+
+}
+
+.SelectBox select {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 4px;
+  border: 0;
+  position: relative;
+  z-index: 1;
+}

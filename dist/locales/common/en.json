@@ -1,0 +1,59 @@
+{
+  "HI": "Hi, {{name}}",
+  "TIME_PICKER": {
+    "PLACEHOLDER": "Select time"
+  },
+  "LOGIN_GROCHAT": {
+    "TITLE_LOGIN_GROCHAT": "Login with GroChat"
+  },
+  "INFORMATION_CARD": {
+    "TITLE_SUCCESS": "Successfully",
+    "TITLE_WARNING": "Warning",
+    "TITLE_INFO": "Information",
+    "TITLE_ERROR": "Error" ,
+    "SEE_MORE": "See more",
+    "SEE_LESS": "See less"
+  },
+  "TRANSFER_FILE": {
+    "CHOICES": "choices",
+    "SELECTED": "Selected",
+    "TITLE_LEFT": "Title Left",
+    "TITLE_RIGHT": "Title Right"
+  },
+  "CARD":{
+    "ROLE": "Role",
+    "DATA_GROUP": "Data Group",
+    "ROLE_NAME_CARD": "Role Name Card",
+    "DATA_GROUP_CARD": "Data Group Card"
+  },
+  "MULTIPLE_SELECT": {
+    "PLACEHOLDER": "Select options"
+  },
+  "PHONE": {
+    "PLACEHOLDER": "Phone number"
+  },
+  "FILE_UPLOAD":{
+    "DESCRIPTION": "Drag and Drop choose file to upload"
+  },
+  "PREVIEW_ADS": {
+    "TITLE_DEFAULT": "Your Ads Goes Here"
+  }, 
+  "NOW": "Now",
+  "OK": "Ok",
+  "RESET": "Reset",
+  "APPLY": "Apply",
+  "SEARCH": "Search",
+  "CANCEL": "Cancel",
+  "CHOOSE_LOCATION": "Choose a location",
+  "REGION_TITLE": "Regions Select",
+  "REGION_CHOOSE": "Choose a location",
+  "OPTIONAL": "Optional",
+  "ALERT": {
+    "SUCCESSFULLY": "Successfully",
+    "WARNING": "Warning",
+    "INFO": "Information",
+    "ERROR": "Error"
+  },
+  "OF": "Of",
+  "ROW_PER_PAGE": "Row per page"
+}

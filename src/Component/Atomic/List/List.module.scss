@@ -1,0 +1,164 @@
+@import "../../Constant/DesainToken.module.scss";
+
+@mixin ContainerListProperties(
+  $mh: 56px,
+  $pd: $spacing-sm-8 $spacing-sm-12,
+  $gap: $spacing-sm-8
+) {
+  width: 500px;
+  min-height: auto !important;
+  padding: $pd;
+  gap: $gap;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-background-hover;
+  }
+}
+
+.containerListSm {
+  @include ContainerListProperties();
+}
+
+.containerListMd {
+  @include ContainerListProperties(
+    64px,
+    $spacing-sm-8 $spacing-sm-14,
+    $spacing-sm-12
+  );
+}
+
+.containerListLg {
+  @include ContainerListProperties(
+    78px,
+    $spacing-sm-10 $spacing-md-16,
+    $spacing-md-16
+  );
+}
+
+.containerListXl {
+  @include ContainerListProperties(
+    96px,
+    $spacing-sm-12 $spacing-md-16,
+    $spacing-md-16
+  );
+}
+
+.containerListXxl {
+  @include ContainerListProperties(
+    110px,
+    $spacing-sm-14 $spacing-md-20,
+    $spacing-md-24
+  );
+}
+
+.containerListXxl16 {
+  @include ContainerListProperties(
+    110px,
+    $spacing-sm-14 $spacing-md-20,
+    $spacing-md-16
+  );
+}
+
+.containerCard {
+  @include ContainerListProperties(
+    64px,
+    $spacing-md-18 $spacing-md-24,
+    $spacing-sm-12
+  );
+  border-radius: 6px;
+  border-left: 8px solid;
+}
+
+.containerMainTitle {
+  width: 100%;
+  text-align: left;
+  //   margin-left: 8px
+}
+
+.titleLabelSm {
+  @include fontBodySmall();
+  font-weight: 400;
+}
+
+.titleLabelMd {
+  @include fontBodyMedium();
+  font-weight: 400;
+}
+
+.titleLabelLg {
+  @include fontBodyLarge();
+  font-weight: 400;
+}
+
+.titleLabelXl {
+  @include fontTitleLarge();
+  font-weight: 400;
+}
+
+.titleLabelXxl {
+  @include fontHeading6;
+  font-weight: 400;
+}
+
+.titleLabelCard {
+  @include fontBodyMedium();
+  font-weight: 700;
+}
+
+.containerIcon {
+  display: flex;
+  align-items: center;
+}
+
+.captionLabelSm {
+  @include fontCaptionMedium();
+  color: $color-text-subtlest;
+}
+
+.captionLabelMd {
+  @include fontCaptionMedium();
+  color: $color-text-subtlest;
+}
+
+.captionLabelLg {
+  @include fontCaptionLarge();
+  color: $color-text-subtlest;
+}
+
+.captionLabelXl {
+  @include fontBodySmall();
+  color: $color-text-subtlest;
+}
+
+.captionLabelXxl {
+  @include fontBodyMedium();
+  color: $color-text-subtlest;
+}
+
+.detailLabelSm {
+  @include fontCaptionMedium();
+  color: $color-text-subtlest;
+}
+
+.detailLabelMd {
+  @include fontCaptionMedium();
+  color: $color-text-subtlest;
+}
+
+.detailLabelLg {
+  @include fontCaptionLarge();
+  color: $color-text-subtlest;
+}
+
+.detailLabelXl {
+  @include fontBodySmall();
+  color: $color-text-subtlest;
+}
+
+.detailLabelXxl {
+  @include fontBodyMedium();
+  color: $color-text-subtlest;
+}

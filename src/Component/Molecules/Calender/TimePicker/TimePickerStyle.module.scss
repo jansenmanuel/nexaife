@@ -1,0 +1,165 @@
+@import "../../../Constant/DesainToken.module";
+
+:global(.ant-picker):hover {
+  border-color: var(--main-color);
+}
+
+:global(.ant-picker-focused) {
+  border-color: var(--main-color) !important;
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.sm {
+  :global(.ant-picker) {
+    border-radius: $radius-xs;
+    padding: $spacing-sm-8 $spacing-sm-12;
+    @include fontBodySmall();
+  }
+
+  :global(.ant-picker-input > input) {
+    @include fontBodySmall()
+  }
+
+  .label {
+    @include fontCaptionLarge;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: 6px;
+
+    .subtitle {
+      @include fontCaptionMedium;
+      font-weight: 400;
+      color: $color-text-subtle;
+    }
+
+  }
+
+}
+
+.md {
+  :global(.ant-picker) {
+    border-radius: $radius-sm;
+    padding: $spacing-sm-10 $spacing-sm-14;
+    @include fontBodyMedium();
+  }
+
+  :global(.ant-picker-input > input) {
+    @include fontBodyMedium();
+  }
+
+  .label {
+    @include fontBodySmall;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: 8px;
+
+    .subtitle {
+      @include fontCaptionLarge;
+      font-weight: 400;
+      color: $color-text-subtle;
+    }
+
+  }
+}
+
+.lg {
+  :global(.ant-picker) {
+    border-radius: $radius-md;
+    padding: $spacing-sm-12 $spacing-md-16;
+    @include fontBodyLarge();
+  }
+
+  :global(.ant-picker-input > input) {
+    @include fontBodyLarge();
+  }
+
+  .label {
+    @include fontBodyMedium;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: 10px;
+
+    .subtitle {
+      @include fontBodySmall;
+      font-weight: 400;
+      color: $color-text-subtle;
+    }
+
+  }
+}
+
+.xl {
+  :global(.ant-picker) {
+    border-radius: $radius-lg;
+    padding: $spacing-sm-14 $spacing-md-18;
+    @include fontBodyMedium();
+    font-size: 32px;
+  }
+
+  :global(.ant-picker-input > input) {
+    @include fontBodyMedium();
+    font-size: 32px;
+  }
+
+  .label {
+    @include fontBodyLarge;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: 12px;
+
+    .subtitle {
+      @include fontBodyMedium;
+      font-weight: 400;
+      color: $color-text-subtle;
+    }
+
+  }
+}
+
+.xxl {
+  :global(.ant-picker) {
+    border-radius: $radius-xl;
+    padding: $spacing-md-16 $spacing-md-20;
+    font-weight: 400;
+    @include fontHeading6();
+  }
+
+  :global(.ant-picker-input > input) {
+    @include fontHeading6();
+    font-weight: 400;
+  }
+
+  .label {
+    @include fontTitleLarge;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: 14px;
+
+    .subtitle {
+      @include fontBodyLarge;
+      font-weight: 400;
+      color: $color-text-subtle;
+    }
+
+  }
+}
+
+.noFooterTimePick :global(.ant-picker-footer) {
+  :global(.ant-picker-ranges) {
+    display: none;
+  }
+
+  :global(.ant-picker-footer-extra) {
+    padding: 16px
+  }
+}
+
+:global(.ant-picker.ant-picker-disabled) {
+  background: #f1f1f1;
+}
+
+:global(.ant-picker-status-error.ant-picker) {
+  border-color: $color-border-danger-strong;
+}

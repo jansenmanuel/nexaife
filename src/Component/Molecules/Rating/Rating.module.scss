@@ -1,0 +1,25 @@
+.RatingNexContainer :global(.ant-rate-star-first) {
+  color: #C6C6C6;
+  transition: all .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.RatingNexContainer :global(.ant-rate-star-half .ant-rate-star-first) {
+  color: inherit;
+}
+
+.RatingNexContainer :global(.ant-rate-star-second) {
+  color: #C6C6C6;
+  transition: all .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.RatingNexContainer :global(.ant-rate-star-full .ant-rate-star-second) {
+  color: inherit;
+}

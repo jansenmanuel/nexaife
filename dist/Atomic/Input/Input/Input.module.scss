@@ -1,0 +1,449 @@
+@import '../../../Constant/DesainToken.module';
+
+:root {
+  --main-color: black;
+}
+
+@import "../../../Constant/DesainToken.module.scss";
+
+
+@mixin inputProperties(
+  $padding: 8px 12px,
+  $fontSize: 14px,
+  $height: 40px,
+  $borderRad: 6px
+) {
+  padding: $padding;
+  font-size: $fontSize;
+  height: $height;
+  border-radius: $borderRad;
+}
+
+@mixin passwordBox(
+  $radius: 6px,
+  $border: 1px,
+  $width: 472,
+  $pdrg: 4px,
+  $bg: #ffffff,
+  $borderClr: #1d1d1d,
+  $height: 40px,
+  $pad: 8px var(--spacing-sm, 12px),
+  $fz: 16px,
+  $gap: 4px
+) {
+  width: 500px;
+  height: $height;
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  border-radius: $radius;
+  padding: $pad;
+  gap: $gap;
+  border: $border solid var(--grayscale-20, #dadcde);
+  & input {
+    font-size: $fz;
+    border: none;
+    width: 100%;
+  }
+  &:hover {
+    border: $border solid var(--main-color);
+  }
+  &::placeholder {
+    color: var(--neutral-placeholder, #c6c6c6);
+  }
+}
+
+@mixin passwordBoxClick($radius) {
+  border: 1px solid var(--main-color) !important;
+  border-radius: $radius;
+}
+
+@mixin buttonBox(
+  $radius: 6px,
+  $border: 1px,
+  $width: 472,
+  $pdrg: 4px,
+  $bg: #ffffff,
+  $borderClr: #1d1d1d,
+  $gap: 12px,
+  $height: 40px,
+  $pad: 8px var(--spacing-sm, 12px),
+  $fz: 16px
+) {
+  width: 500px;
+  font-size: $fz;
+  padding: $pad;
+  height: $height;
+  gap: $gap;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  border-radius: $radius;
+  border: $border solid var(--grayscale-20, #dadcde);
+  & input {
+    border: none;
+    // padding-right: $pdrg;
+    width: 100%;
+  }
+  &:hover {
+    border: $border solid var(--main-color);
+  }
+}
+
+@mixin buttonBoxClick($radius) {
+  border: 1px solid var(--main-color) !important;
+  border-radius: $radius;
+}
+
+@mixin labelProps($fz:14px,$lh:16.41px,$fw:500,$pd:6px) {
+  text-align: left;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Roboto";
+  font-weight: $fw;
+  padding-bottom: $pd;
+}
+
+.Invalid {
+  align-items: flex-start;
+  font-weight: 400;
+  background: #ffffff;
+  border: 1px solid #ff0000;
+  box-sizing: border-box;
+  /* border-radius: 6px; */
+}
+
+.Valid {
+  align-items: flex-start;
+  font-weight: 400;
+  background: #ffffff;
+  border: 1px solid #57c22d;
+  box-sizing: border-box;
+  /* border-radius: 6px; */
+}
+
+.Valid:focus {
+  border: 1px solid #57c22d;
+}
+
+.Invalid:focus {
+  border: 1px solid #ff0000;
+}
+
+.Input:focus {
+  border: 1px solid var(--main-color);
+}
+
+.Input {
+  align-items: flex-start;
+  font-weight: 400;
+  background: #ffffff;
+  border: 1px solid var(--grayscale-20, #dadcde);
+  box-sizing: border-box;
+  //max-width: 600px;
+  /* border-radius: 6px; */
+  &:hover {
+    border: 1px solid var(--main-color);
+  }
+
+  &::placeholder {
+    color: var(--neutral-placeholder, #c6c6c6);
+  }
+}
+
+.Disabled {
+  background: $color-background-disabled !important;
+  color: #818181;
+  cursor: not-allowed !important;
+  border: 1px solid var(--grayscale-20, #dadcde);
+
+  &:hover {
+    border: 1px solid #dadcde !important;
+    cursor: not-allowed !important;
+  }
+
+  input {
+    background-color: $color-background-disabled;
+  }
+
+  input:disabled {
+    color: $color-text-placeholder-disabled;
+  }
+
+}
+
+.DisabledPhoneNumber {
+  background: $color-background-disabled !important;
+  color: rgba(66, 66, 66, 0.144);
+  cursor: not-allowed !important;
+  border: 1px solid var(--grayscale-20, #dadcde);
+  // &:hover{
+  //   cursor: not-allowed !important;
+  // }
+}
+
+.Sm {
+  @include inputProperties($height: 38px);
+  @include fontBodySmall
+}
+
+.Md {
+  @include inputProperties(10px 14px, 20px, 48px, 8px);
+  @include fontBodyMedium
+}
+
+.Lg {
+  @include inputProperties(12px 16px, 24px, 58px, 10px);
+  @include fontBodyLarge
+}
+
+.Xl {
+  @include inputProperties(14px 18px, 32px !important, 70px, 12px);
+  @include fontSubTitleLarge
+}
+
+.Xxl {
+  @include inputProperties(16px 20px, 40px !important, 78px, 14px);
+  @include fontSubTitleLarge
+}
+
+.MinWidth {
+  min-width: 500px;
+}
+
+.MaxWidth {
+  width: 600px;
+  /* width: 39.90vw; 766px */
+}
+
+.PasswordBoxSm {
+  @include passwordBox(6px, 1px, 456px, 4px);
+  @include fontBodySmall
+}
+
+.PasswordBoxSmDisabled {
+  @include passwordBox(6px, 1px, 456px, 4px, #818181);
+  @include fontBodySmall
+}
+
+.ButtonBoxSm {
+  @include buttonBox(6px, 1px, 401px, 4px, $gap: 12px);
+}
+
+.ButtonBoxSmDisabled {
+  @include buttonBox(6px, 1px, 401px, 4px, #818181);
+}
+
+.ButtonBoxSmClick {
+  @include buttonBoxClick(6px);
+}
+
+.ButtonBoxMdClick {
+  @include buttonBoxClick(8px);
+}
+
+.ButtonBoxLgClick {
+  @include buttonBoxClick(10px);
+}
+
+.ButtonBoxXlClick {
+  @include buttonBoxClick(12px);
+}
+
+.ButtonBoxXxlClick {
+  @include buttonBoxClick(14px);
+}
+
+.ButtonBoxMd {
+  @include buttonBox(
+                  8px,
+                  1px,
+                  383px,
+                  6px,
+          $gap: 14px,
+          $height: 50px,
+          $pad: 10px 14px,
+          $fz: 20px
+  );
+}
+
+.ButtonBoxLg {
+  @include buttonBox(
+                  10px,
+                  1px,
+                  364px,
+                  8px,
+          $gap: 16px,
+          $height: 60px,
+          $pad: var(--spacing-sm, 12px) var(--spacing-md, 16px),
+          $fz: 24px
+  );
+}
+
+.ButtonBoxXl {
+  @include buttonBox(
+                  12px,
+                  1px,
+                  351px,
+                  10px,
+          $gap: 18px,
+          $height: 72px,
+          $pad: 14px 18px,
+  );
+}
+
+.ButtonBoxXxl {
+  @include buttonBox(
+                  14px,
+                  1px,
+                  281px,
+                  12px,
+          $gap: 20px,
+          $height: 80px,
+          $pad: 16px 20px,
+          $fz: 40px
+  );
+}
+
+.PasswordBoxSmClick {
+  @include passwordBoxClick(6px);
+}
+
+.PasswordBoxMdClick {
+  @include passwordBoxClick(8px);
+}
+
+.PasswordBoxLgClick {
+  @include passwordBoxClick(10px);
+}
+
+.PasswordBoxXlClick {
+  @include passwordBoxClick(12px);
+}
+
+.PasswordBoxXxlClick {
+  @include passwordBoxClick(14px);
+}
+
+.PasswordBoxMd {
+  @include passwordBox(
+                  8px,
+                  1px,
+                  446px,
+                  6px,
+          $height: 50px,
+          $fz: 20px,
+          $pad: 10px 14px,
+          $gap: 6px
+  );
+  @include fontBodyMedium
+}
+
+.PasswordBoxLg {
+  @include passwordBox(
+                  10px,
+                  1px,
+                  436px,
+                  8px,
+          $height: 60px,
+          $fz: 24px,
+          $pad: 12px 16px,
+          $gap: 8px
+  );
+  @include fontBodyLarge
+}
+
+.PasswordBoxXl {
+  @include passwordBox(
+                  12px,
+                  1px,
+                  426px,
+                  10px,
+          $height: 72px,
+          $fz: 32px,
+          $pad: 14px 18px,
+          $gap: 10px
+  );
+  @include fontSubTitleLarge
+}
+
+.PasswordBoxXxl {
+  @include passwordBox(
+                  14px,
+                  1px,
+                  412px,
+                  12px,
+          $height: 80px,
+          $pad: 16px 20px,
+          $fz: 40px,
+          $gap: 12px
+  );
+  @include fontSubTitleLarge
+}
+
+.Visibility {
+  position: relative;
+  transform: translateX(-30px);
+}
+
+.VisibilityDisabled {
+  position: relative;
+  cursor: not-allowed;
+  transform: translateX(-30px);
+}
+
+.iconInput {
+  position: absolute;
+  margin-right: 17.5px;
+  cursor: auto;
+}
+
+.containerInput {
+  width: 100%;
+  // flex-direction: row-reverse;
+}
+
+.LabelTextSm {
+  @include labelProps()
+}
+
+.LabelTextMd {
+  @include labelProps(16px, 24px, $pd: 8px)
+}
+
+.LabelTextLg {
+  @include labelProps(20px, 30px, $pd: 10px)
+}
+
+.LabelTextXl {
+  @include labelProps(24px, 36px, $pd: 12px)
+}
+
+.LabelTextXxl {
+  @include labelProps(32px, 43.58px, 600, 14px)
+}
+
+// .containerLabelTextSm {
+
+// }
+
+.placeholderInputPassword {
+  &::placeholder {
+    color: var(--neutral-placeholder, #c6c6c6);
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .Visibility {
+    margin-left: 97%;
+  }
+}
+
+.passwordBoxIsInvalid {
+  border: 1px solid #ff0000 !important;
+}
+
+.optionalText {
+  color: $color-text-disabled;
+}

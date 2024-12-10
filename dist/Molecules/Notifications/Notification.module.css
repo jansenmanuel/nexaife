@@ -1,0 +1,64 @@
+.NotificationWrapper {
+  position: relative;
+  height: 100%;
+  display: grid;;
+}
+
+.NotificationItem {
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0 auto;
+  padding: 8.5px 0px;
+  margin-top: 20px;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: TopIn 1s;
+  animation-fill-mode: forwards;
+  min-width: 373px;
+  max-width: 1090px;
+  max-height: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  word-wrap: break-word;
+  z-index: 100;
+}
+
+@keyframes TopIn {
+  from {
+    margin-top: -300px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes TopOut {
+  from {
+    margin-top: 20px;
+    opacity: 1;
+  }
+  to {
+    margin-top: -300px;
+    opacity: 0;
+  }
+}
+
+.NotificationItem.Exit {
+  animation: TopOut 1s;
+  animation-fill-mode: forwards;
+}
+
+.NotificationItem p {
+  margin: 8.5px 16px;
+}
+.NotificationItem img {
+  margin: 8.5px 0px 8.5px 16px;
+}

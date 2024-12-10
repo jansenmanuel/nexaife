@@ -1,0 +1,91 @@
+
+
+.SideBarMenuCollapse {
+  display: none;
+}
+.SideBarMenu {
+  padding: 0px 8px;
+}
+.SideBarMenu a li {
+  padding: 0 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  word-wrap: break-word;
+  margin: 11px 0px;
+}
+
+.IconRight {
+  margin-left: 47%;
+  width: 30px;
+}
+.Title {
+  padding: 7px 0;
+  margin: 0 8px;
+  font-weight: 500;
+}
+.SubMenuTitle {
+  padding: 0 2px;
+  width: calc(100% - 62px);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+ 
+}
+
+.IconLeft {
+  margin-left: 6px;
+}
+
+
+.SideMenu {
+  margin: 0 6px;
+  margin-top: 4px;
+  align-items: center;
+}
+.SideMenuContainer {
+  list-style: none;
+  padding-inline-start: 0px;
+  overflow-y: auto;
+  overflow-x: hiden;
+  height: calc(100vh - 120px);
+}
+
+.SubMenu {
+  display: flex;
+  height: 32px;
+  margin: 4px 8px;
+  align-items: center;
+}
+
+.IconSubMenu {
+  width: 30px;
+  padding: 0 0 0 6px;
+}
+.IconAccordion {
+  width: 32px;
+  padding: 0px;
+}
+/* .SubSubmenu {
+  padding: 5px 0 5px 0px;
+  margin: 4px 0;
+}
+.SubSubmenu a {
+  color: #666666;
+} */
+/* .SubSubmenu:hover, */
+/* .SubMenu:hover {
+  background: rgba(155, 55, 137, 0.25);
+  border-radius: 12px;
+} */
+.SubMenuActive {
+  border-radius: 12px;
+}
+
+.SideBarMenu {
+  list-style: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+

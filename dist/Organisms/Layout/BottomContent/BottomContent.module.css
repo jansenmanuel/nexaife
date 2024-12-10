@@ -1,0 +1,8 @@
+.Container{
+  margin-top: 80px;
+}
+.ContentLeft {
+  z-index: 0;
+  width: 316px;
+  height: 100vh;
+}

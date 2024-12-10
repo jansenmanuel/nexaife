@@ -1,0 +1,255 @@
+@import "../../../Constant/DesainToken.module.scss";
+
+
+@mixin labelProps($fz:14px,$lh:16.41px,$fw:500,$pd:6px) {
+  text-align: left;
+  font-size: $fz;
+  line-height: $lh;
+  font-family: "Roboto";
+  font-weight: $fw;
+  padding-bottom: $pd;
+}
+
+@mixin container($br: $radius-xs, $bd: 1px solid $color-border, $pd: $spacing-sm-8 $spacing-sm-12, $gap: $spacing-sm-4, $bgcolor: #FFFFFF) {
+  width: 500px;
+  border-radius: $br;
+  border: $bd;
+  padding: $pd;
+  gap: $gap;
+  position: relative;
+  background-color: $bgcolor;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--main-color-select);
+  }
+}
+
+.MultipleSelectSizeSm {
+  @include container()
+}
+
+.MultipleSelectSizeMd {
+  @include container($radius-sm, 1px solid $color-border, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6)
+}
+
+.MultipleSelectSizeLg {
+  @include container($radius-md, 1px solid $color-border, $spacing-sm-12 $spacing-md-16, $spacing-sm-8)
+}
+
+.MultipleSelectSizeXl {
+  @include container($radius-lg, 1px solid $color-border, $spacing-sm-14 $spacing-md-18, $spacing-sm-10)
+}
+
+.MultipleSelectSizeXxl {
+  @include container($radius-xl, 1px solid $color-border, $spacing-md-16 $spacing-md-20, $spacing-sm-12)
+}
+
+.MultipleSelectSizeSmError {
+  @include container($bd: 1px solid $color-border-danger-strong);
+
+  &:hover {
+    border-color: $color-border-danger-strong !important
+  }
+}
+
+.MultipleSelectSizeMdError {
+  @include container($radius-sm, 1px solid $color-border-danger-strong, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6);
+
+  &:hover {
+    border-color: $color-border-danger-strong !important
+  }
+}
+
+.MultipleSelectSizeLgError {
+  @include container($radius-md, 1px solid $color-border-danger-strong, $spacing-sm-12 $spacing-md-16, $spacing-sm-8);
+
+  &:hover {
+    border-color: $color-border-danger-strong !important
+  }
+}
+
+.MultipleSelectSizeXlError {
+  @include container($radius-lg, 1px solid $color-border-danger-strong, $spacing-sm-14 $spacing-md-18, $spacing-sm-10);
+
+  &:hover {
+    border-color: $color-border-danger-strong !important
+  }
+}
+
+.MultipleSelectSizeXxlError {
+  @include container($radius-xl, 1px solid $color-border-danger-strong, $spacing-md-16 $spacing-md-20, $spacing-sm-12);
+
+  &:hover {
+    border-color: $color-border-danger-strong !important
+  }
+}
+
+.MultipleSelectSizeSmDisabled {
+  @include container($bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+
+  &:hover {
+    border-color: $color-border;
+  }
+
+}
+
+.MultipleSelectSizeMdDisabled {
+  @include container($radius-sm, 1px solid $color-border, $spacing-sm-10 $spacing-sm-14, $spacing-sm-6, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+.MultipleSelectSizeLgDisabled {
+  @include container($radius-md, 1px solid $color-border, $spacing-sm-12 $spacing-md-16, $spacing-sm-8, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+
+  &:hover {
+    border-color: $color-border;
+  }
+
+}
+
+.MultipleSelectSizeXlDisabled {
+  @include container($radius-lg, 1px solid $color-border, $spacing-sm-14 $spacing-md-18, $spacing-sm-10, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+.MultipleSelectSizeXxlDisabled {
+  @include container($radius-xl, 1px solid $color-border, $spacing-md-16 $spacing-md-20, $spacing-sm-12, $bgcolor: $color-background-disabled);
+  cursor: not-allowed !important;
+
+  &:hover {
+    border-color: $color-border;
+  }
+}
+
+@mixin SelectInputPropertiesV2_0_3($wd:456px, $color:$placeholder-color,$mh:68px) {
+  width: $wd;
+  color: $color;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden auto;
+  max-height: $mh;
+  gap: 5px;
+}
+
+.Multiple_Select_PH_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3();
+  @include fontBodySmall();
+}
+
+.Multiple_Select_DB_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($color: $color-text-placeholder-disabled,);
+  @include fontBodySmall();
+}
+
+.Multiple_Select_ACT_Sm_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($color: $color-text);
+  @include fontBodySmall();
+}
+
+.Multiple_Select_PH_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 446px, $mh: 90px);
+  @include fontBodyMedium();
+}
+
+.Multiple_Select_DB_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 446px, $color: $color-text-placeholder-disabled);
+  @include fontBodyMedium();
+}
+
+.Multiple_Select_ACT_Md_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 446px, $color: $color-text);
+  @include fontBodyMedium();
+}
+
+.Multiple_Select_PH_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 436px, $mh: 62px);
+  @include fontBodyLarge();
+}
+
+.Multiple_Select_DB_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 436px, $color: $color-text-placeholder-disabled);
+  @include fontBodyLarge();
+}
+
+.Multiple_Select_ACT_Lg_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 436px, $color: $color-text);
+  @include fontBodyLarge();
+}
+
+.Multiple_Select_PH_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 426px, $mh: 73px);
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.Multiple_Select_DB_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 426px, $color: $color-text-placeholder-disabled);
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.Multiple_Select_ACT_Xl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 426px, $color: $color-text);
+  @include fontTitleLarge();
+  font-weight: 400 !important;
+}
+
+.Multiple_Select_PH_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 412px);
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.Multiple_Select_DB_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 412px, $color: $color-text-placeholder-disabled);
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.Multiple_Select_ACT_Xxl_V2_0_3 {
+  @include SelectInputPropertiesV2_0_3($wd: 412px, $color: $color-text);
+  @include fontHeading6();
+  font-weight: 400 !important;
+}
+
+.containerOptions {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 250px;
+  transition: max-height 0.3s ease-out;
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.LabelTextSm {
+  @include labelProps()
+}
+.LabelTextMd {
+  @include labelProps(16px, 24px,$pd:8px)
+}
+.LabelTextLg {
+  @include labelProps(20px, 30px,$pd:10px)
+}
+.LabelTextXl {
+  @include labelProps(24px, 36px,$pd:12px)
+}
+.LabelTextXxl {
+  @include labelProps(32px,43.58px,600,14px)
+}

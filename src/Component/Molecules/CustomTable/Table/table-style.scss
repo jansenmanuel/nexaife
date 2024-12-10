@@ -1,0 +1,49 @@
+@mixin titleText($fontSize: 16px, $fontFamily: "Roboto", $fontWeight: 700) {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+.table-container {
+  .ant-table table {
+    border: 1px #dddddd solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .ant-table-thead > tr > th {
+    background: #f6f6f6 !important;
+    @include titleText(16px, "Roboto", 700);
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    border: 0px, 0px, 1px, 0px;
+    border-color: #dddddd;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 14px !important;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 14px !important;
+  }
+
+  .ant-table-column-sorters {
+    width: fit-content;
+  }
+
+  .ant-table-column-sorter-down.active,
+  .ant-table-column-sorter-up.active {
+    color: black;
+  }
+  .even-row {
+    background-color: #ffffff !important;
+  }
+
+  .odd-row {
+    background-color: #f6f6f6 !important;
+  }
+}

@@ -1,0 +1,53 @@
+.Wrap {
+    margin: 20px;
+    text-align: left;
+}
+
+.BadgePage {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #EEEEEE;
+    align-items: center;
+}
+
+.Group {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 50%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .sectionButton {
+        width: 25%;
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+pre code {
+    color: #d63384;
+}

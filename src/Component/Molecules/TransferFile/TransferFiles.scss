@@ -1,0 +1,60 @@
+@import "../../Constant/DesainToken.module.scss";
+
+span.ant-transfer-list-header-dropdown {
+    display: none;
+}
+
+.ant-transfer-list {
+    border: 1px solid var(--Color-Border-color-border, #DADCDE);
+    border-radius: 16px;
+
+}
+
+.ant-transfer-list-header {
+    // border: 1px solid var(--Color-Border-color-border, #DADCDE);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: var(--Color-Background-color-background-gray, #F6F6F6);
+    height: 56px;
+
+}
+
+
+.ant-transfer-list-footer {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: var(--Color-Background-color-background-gray, #F6F6F6);
+
+}
+
+.ant-transfer-list-content {
+    background: var(--Color-Background-color-background, #FFFFFF);
+}
+
+.ant-transfer-list-body-search-wrapper {
+    background: var(--Color-Background-color-background, #FFFFFF);
+}
+
+.footer-transfer-list{
+    @include fontBodySmall();
+    font-weight: 500
+}
+ .title-transfer-list{
+    @include fontBodyLarge();
+    padding-left: 7px;
+    font-weight: 500;
+ }
+ .ant-transfer-list-content-item-text{
+    @include fontBodyMedium();
+ }
+
+ .ant-transfer-operation{
+    margin : 0 40px
+ }
+
+ .ant-transfer-operation .ant-btn-icon-only.ant-btn-sm{
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+ }

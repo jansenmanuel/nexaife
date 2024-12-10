@@ -1,0 +1,153 @@
+@import "../../Constant/DesainToken.module.scss";
+:root {
+    --visible-component: "flex";
+    --border-color-condition : "#DADCDE";
+}
+
+.text-form-perubahan {
+    color: $color-text !important;
+}
+
+.text-form-perubahan.size-sm {
+    @include fontBodySmall();
+    color: var(--main-color) !important
+}
+
+.text-form-perubahan.size-md {
+    @include fontBodyMedium();
+    color: var(--main-color) !important
+}
+
+.text-form-perubahan.size-lg {
+    @include fontBodyLarge();
+    color: var(--main-color) !important
+}
+
+.text-form-perubahan.size-xl {
+    font-size: 2rem;
+    line-height: 43.58px;
+    color: var(--main-color) !important
+}
+
+.text-form-perubahan.size-xxl {
+    @include fontTitleLarge();
+    color: var(--main-color) !important;
+}
+.ant-upload.ant-upload-drag:not(.ant-upload-disabled):hover{
+    border-color: var(--main-color);
+}
+.ant-upload.ant-upload-drag {
+    max-width: 500px;
+    min-height: 96px;
+    border: var(--border-color-condition) 1px dashed;
+    border-radius: 6px;
+    display: var(--visible-component);
+}
+.ant-upload.ant-upload-drag.dragger-customize-md {
+    min-height: 126px;
+    border: var(--border-color-condition) 1.5px dashed;
+    border-radius: 6px;
+    display: var(--visible-component);
+}
+
+.ant-upload.ant-upload-drag.dragger-customize-lg {
+    min-height: 154px;
+    border: var(--border-color-condition) 2px dashed;
+    border-radius: 6px;
+    display: var(--visible-component);
+}
+
+.ant-upload.ant-upload-drag.dragger-customize-xl {
+    max-width: 600px;
+    min-height: 184px;
+    border: var(--border-color-condition) 2.5px dashed;
+    border-radius: 6px;
+    display: var(--visible-component);
+}
+
+.ant-upload.ant-upload-drag.dragger-customize-xxl {
+    max-width: 700px;
+    min-height: 201px;
+    border: var(--border-color-condition) 3px dashed;
+    border-radius: 6px;
+    display: var(--visible-component);
+}
+
+.text-upload-file-sub-title.size-sm {
+    @include fontCaptionLarge();
+    color: $color-text-subtlest;
+}
+
+.text-upload-file-sub-title.size-md {
+    @include fontBodySmall();
+    color: $color-text-subtlest;
+
+}
+
+.text-upload-file-sub-title.size-lg {
+    @include fontBodyMedium();
+    color: $color-text-subtlest;
+
+}
+
+.text-upload-file-sub-title.size-xl {
+    @include fontBodyLarge();
+    color: $color-text-subtlest;
+
+}
+
+.text-upload-file-sub-title.size-xxl {
+    @include fontBodyLarge();
+    color: $color-text-subtlest;
+}
+
+
+.customize-size-sm .ant-upload-list-item.ant-upload-list-item-done.ant-upload-list-item-list-type-picture,
+.customize-size-md .ant-upload-list-item.ant-upload-list-item-done.ant-upload-list-item-list-type-picture,
+.customize-size-lg .ant-upload-list-item.ant-upload-list-item-done.ant-upload-list-item-list-type-picture {
+    max-width: 500px;
+    min-height: 96px;
+}
+
+.customize-size-xl .ant-upload-list-item.ant-upload-list-item-done.ant-upload-list-item-list-type-picture {
+    max-width: 600px;
+    min-height: 184px;
+}
+
+.customize-size-xxl .ant-upload-list-item.ant-upload-list-item-done.ant-upload-list-item-list-type-picture {
+    max-width: 700px;
+    min-height: 210px;
+}
+
+.customize-size-sm .ant-upload-list-item.ant-upload-list-item-uploading.ant-upload-list-item-list-type-picture,
+.customize-size-md .ant-upload-list-item.ant-upload-list-item-uploading.ant-upload-list-item-list-type-picture,
+.customize-size-lg .ant-upload-list-item.ant-upload-list-item-uploading.ant-upload-list-item-list-type-picture {
+    max-width: 500px;
+    min-height: 96px;
+}
+
+.customize-size-xl .ant-upload-list-item.ant-upload-list-item-uploading.ant-upload-list-item-list-type-picture {
+    max-width: 600px;
+    min-height: 184px;
+}
+.customize-size-xxl .ant-upload-list-item.ant-upload-list-item-uploading.ant-upload-list-item-list-type-picture {
+    max-width: 700px;
+    min-height: 210px;
+}
+
+.customize-size-sm .ant-upload-list-item.ant-upload-list-item-error.ant-upload-list-item-list-type-picture,
+.customize-size-md .ant-upload-list-item.ant-upload-list-item-error.ant-upload-list-item-list-type-picture,
+.customize-size-lg .ant-upload-list-item.ant-upload-list-item-error.ant-upload-list-item-list-type-picture {
+    max-width: 500px;
+    min-height: 96px;
+}
+
+.customize-size-xl .ant-upload-list-item.ant-upload-list-item-error.ant-upload-list-item-list-type-picture {
+    max-width: 600px;
+    min-height: 184px;
+}
+
+.customize-size-xxl .ant-upload-list-item.ant-upload-list-item-error.ant-upload-list-item-list-type-picture {
+    max-width: 700px;
+    min-height: 210px;
+}

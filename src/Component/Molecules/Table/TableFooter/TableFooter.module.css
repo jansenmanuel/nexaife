@@ -1,0 +1,43 @@
+.TableFooter {
+  height: 44px;
+  max-height: 44px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+.List {
+  float: right;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.List li {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.Label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.Pagination li {
+  padding: 4.5px 8px;
+  border-radius: 4px;
+  font-weight: 500 !important;
+  height: 1px !important;
+  z-index: 2;
+}
+.Pagination {
+  margin-right: 1px;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 4.5px;
+}
+
+.Pagination li:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.divider {
+    width: 100%;
+
+    &.sm {
+        border-bottom: 1px solid #DADCDE;
+    }
+
+    &.md {
+        border-bottom: 4px solid #DADCDE;
+    }
+
+    &.lg {
+        border-bottom: 8px solid #DADCDE;
+    }
+}

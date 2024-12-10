@@ -1,0 +1,80 @@
+.SideBar {
+  width: 316px;
+  height: calc(100vh - 80px);
+  position: fixed;
+  z-index: 4;
+  transition: width 1s;
+}
+.SideBarCollapse {
+  width: 60px;
+  height: calc(100vh - 80px);
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 4;
+  transition: width 1s;
+}
+.SideBarCollapseIcon {
+  width: 60px;
+  height: calc(100vh - 80px);
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 4;
+  transition: width 1s;
+}
+.Content {
+  z-index: 3;
+  margin-left: 316px;
+  width: calc(100vw - 316px);
+  padding: 24px;
+  height: calc(100vh - 80px);
+  position: fixed;
+  overflow-x: hidden;
+  transition: margin-left 1s;
+
+}
+.Container {
+  margin-top: 80px;
+}
+.ContentExpand {
+  transition: margin-left 1s;
+  z-index: 3;
+  margin-left: 60px;
+  width: calc(100vw - 60px);
+  padding: 24px;
+  height: calc(100vh - 80px);
+  position: fixed;
+  overflow-x: hidden;
+}
+.Container {
+  display: flex;
+  margin-top: 80px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1350px) {
+  .Content {
+    width: 100vw;
+    margin-left: 0;
+    transition: width 0s;
+  }
+  .SideBar,
+  .SideBarCollapse,.SideBarCollapseIcon {
+    position: absolute;
+    transition: width 1s;
+  }
+  .SideBar {
+    width: 316px;
+  }
+  .SideBarCollapse {
+    width: 0px;
+  }
+  .SideBarCollapseIcon {
+    width: 316px;
+  }
+ 
+  .ContentExpand {
+    margin-left: 0;
+    width: 100vw;
+    transition: margin-left 0s;
+  }
+}

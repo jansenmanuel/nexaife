@@ -1,0 +1,8 @@
+.TopBar {
+  position: fixed;
+  margin-bottom: 80px;
+  display: flex;
+  height: 80px;
+  width: 150vw;
+  z-index: 5;
+}

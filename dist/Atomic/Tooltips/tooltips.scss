@@ -1,0 +1,228 @@
+@mixin tooltipFont($fontSize: 12px, $lineHeight: 14px, $fontWeight: 500) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight; // ensure the font-weight is a number without 'px'
+    // text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.ant-tooltip-inner {
+    @include tooltipFont(12px, 14.06px, 400);
+    min-width: 59px;
+    min-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.ant-tooltip-placement-left .ant-tooltip-arrow {
+    margin-right: 0.6px;
+    border-width: 10px;
+    
+}
+
+.ant-tooltip-placement-bottom .ant-tooltip-arrow {
+    margin-top: 0.5px;
+}
+
+.ant-tooltip-placement-top .ant-tooltip-arrow {
+    margin-bottom: 0.3px;
+}
+
+.ant-tooltip-placement-right .ant-tooltip-arrow {
+    margin-left: 0.3px;
+    
+}
+
+.ant-popover {
+    border-radius: 8px;
+}
+
+.ant-popover-inner {
+    border-radius: 8px;
+    min-width: 100px; 
+    min-height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    padding: 1px 2px;
+    background-color: #1D1D1D;  
+}
+
+.popover-default .ant-popover-inner {
+    width: 200px !important;
+}
+
+.ant-popover-title {
+    @include tooltipFont(12px, 14px, 400);
+    border-bottom: none;    
+    margin: 0px ;
+    // // border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: 0px;
+    min-width: 100px;
+    padding: 0px;
+    min-width: 100px;
+}
+
+.ant-popover-inner-title {
+    @include tooltipFont(12px, 14px, 400); 
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;    
+    // border-style: solid;
+}
+
+.ant-popover-inner-content {  
+    @include tooltipFont(16px, 24px, 700); 
+    padding: 0px;
+    margin-bottom: 0px;
+    // border-style: solid;
+}
+
+.ant-popover-placement-bottom .ant-popover-arrow {
+    margin-top: 0.4px;
+}
+
+.ant-popover-placement-top .ant-popover-arrow {
+    margin-bottom: 0.4px;
+}
+
+.ant-popover-placement-left .ant-popover-arrow {
+    margin-right: 0.3px;
+}
+
+.ant-popover-placement-right .ant-popover-arrow {
+    margin-left: 0.4px;
+}
+
+
+.default-content-tooltip {
+    border-radius: 8px;
+    min-width: 400px;
+    min-height: 84px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16.3px;
+        font-family: 'open sans';
+        color: #1D1D1D;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.06px;
+        color: #424242;
+    }
+
+    // a {
+    //     font-weight: 600;
+    //     font-size: 12px;
+    //     line-height: 16.34px;
+    //     font-family: 'Roboto';  
+    //     color: #0068BE;
+    // }
+}
+
+.default-content-tooltip-badge-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.default-content-tooltip-badge {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 40px;
+    height: 22px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.default-content-tooltip-view {
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 16.34px;
+        font-family: 'Open Sans';  
+        color: #0068BE;
+        cursor: pointer;
+
+}
+
+.default-content-tooltip-close {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;   
+    margin: 6px;
+}
+
+
+.default-content-tooltip-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    // border: 1px solid #1D1D1D;
+    margin-top: -15px;
+    margin-right: 12px;
+    margin-left: 12px;
+    // margin-bottom: 12px;
+    min-height: 60px;
+}
+
+
+.chart-content-tooltip {
+    border-radius: 4px;
+    min-width: 100px;
+    min-height: 58px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:4px;
+
+    h1 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.06px;
+        color: #ffff;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        color: #ffff;
+    }
+
+    // a {
+    //     font-weight: 600;
+    //     font-size: 12px;
+    //     line-height: 16.34px;
+    //     font-family: 'Roboto';  
+    //     color: #0068BE;
+    // }
+}
+
+
+

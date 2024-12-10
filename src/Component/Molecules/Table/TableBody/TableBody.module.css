@@ -1,0 +1,17 @@
+
+.ItemLink a:hover {
+  cursor: pointer;
+}
+.TableList td {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.TableList tr {
+  white-space: nowrap;
+}
+
+.RowLink:hover {
+  cursor: pointer;
+}
